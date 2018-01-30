@@ -33,7 +33,7 @@ import { panesSelector } from '../Panes/redux';
 import { onRouteCurrentChallenge } from '../routes/Challenges/redux';
 
 
-const fCClogo = 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg';
+const fCClogo = '/images/teencodecamp_logo.png';
 // TODO @freecodecamp-team: place this glyph in S3 like above, PR in /assets
 const fCCglyph = 'https://raw.githubusercontent.com/freeCodeCamp/assets/' +
   '3b9cafc312802199ebba8b31fb1ed9b466a3efbb/assets/logos/FFCFire.png';
@@ -194,12 +194,12 @@ export class FCCNav extends React.Component {
               onClick={ clickOnLogo }
               >
               <img
-                alt='learn to code javascript at freeCodeCamp logo'
+                alt='learn to code at Spiraladder logo'
                 className='img-responsive nav-logo logo'
                 src={ fCClogo }
               />
               <img
-                alt='learn to code javascript at freeCodeCamp logo'
+                alt='learn to code javascript at Spiraladder logo'
                 className='img-responsive logo-glyph'
                 src={ fCCglyph }
               />
