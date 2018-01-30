@@ -201,7 +201,7 @@ export const postThemeError = createAction(
 );
 
 const defaultState = {
-  title: 'Learn To Code | freeCodeCamp',
+  title: 'Learn To Code | Project Spiral',
   isSignInAttempted: false,
   user: '',
   csrfToken: '',
@@ -328,7 +328,7 @@ export default handleActions(
   () => ({
     [types.updateTitle]: (state, { payload = 'Learn To Code' }) => ({
       ...state,
-      title: payload + ' | freeCodeCamp'
+        title: payload + ' | Project Spiral'
     }),
 
     [types.fetchUser.complete]: (state, { payload: user }) => ({

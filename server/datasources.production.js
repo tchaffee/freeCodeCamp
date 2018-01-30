@@ -11,7 +11,8 @@ module.exports = {
     transport: {
       type: 'ses',
       accessKeyId: process.env.SES_ID,
-      secretAccessKey: process.env.SES_SECRET
+      secretAccessKey: process.env.SES_SECRET,
+      region: process.env.SES_REGION
     }
   }
 };

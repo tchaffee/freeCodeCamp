@@ -520,16 +520,15 @@ module.exports = function(User) {
     })
       .flatMap(token => {
         let renderAuthEmail = renderSignInEmail;
-        let subject = 'Your sign in link for freeCodeCamp.org';
+        let subject = 'Your sign in link for Spiralladder';
         if (isSignUp) {
           renderAuthEmail = renderSignUpEmail;
-          subject = 'Your sign in link for your new freeCodeCamp.org account';
+          subject = 'Your sign in link for your new Spiralladder account';
         }
         if (newEmail) {
           renderAuthEmail = renderEmailChangeEmail;
-          subject = dedent`
-            Please confirm your updated email address for freeCodeCamp.org
-          `;
+        subject = dedent`
+          Please confirm your updated email address for Spiraladder`;
         }
         const { id: loginToken, created: emailAuthLinkTTL } = token;
         const loginEmail = this.getEncodedEmail(newEmail ? newEmail : null);

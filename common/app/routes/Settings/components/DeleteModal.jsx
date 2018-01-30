@@ -35,8 +35,8 @@ function DeleteModal(props) {
         <p>
           If there's something we could do better, send us an email instead and
           we'll do our best: &thinsp;
-          <a href='mailto:team@freecodecamp.org' title='team@freecodecamp.org'>
-            team@freecodecamp.org
+          <a href='mailto:team@spiraladder.com' title='team@spiraladder.com'>
+            team@spiraladder.com
           </a>
         </p>
         <hr />
