@@ -44,7 +44,7 @@ export class HelpModal extends PureComponent {
           <h3 className={`${ns}-help-modal-heading`}>
             If you've already tried the&nbsp;
             <a href={ RSA } title='Read, search, ask'>Read-Search-Ask</a>&nbsp;
-            method, then you can ask for help on the freeCodeCamp forum.
+            method, then you can ask for help on the Spiraladder forum.
           </h3>
           <Button
             block={ true }

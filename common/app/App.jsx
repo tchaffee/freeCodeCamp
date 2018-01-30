@@ -74,7 +74,7 @@ export class FreeCodeCamp extends React.Component {
   }
 }
 
-FreeCodeCamp.displayName = 'freeCodeCamp';
+FreeCodeCamp.displayName = 'teenCodeCamp';
 FreeCodeCamp.propTypes = propTypes;
 
 export default connect(
