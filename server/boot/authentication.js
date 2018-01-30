@@ -39,7 +39,7 @@ module.exports = function enableAuthentication(app) {
       });
     }
     return res.render('account/email-signin', {
-      title: 'Sign in to freeCodeCamp using your Email Address'
+      title: 'Sign in to Spiraladder using your Email Address'
     });
   }
 
@@ -57,7 +57,7 @@ module.exports = function enableAuthentication(app) {
     '/deprecated-signin',
     ifUserRedirect,
     (req, res) => res.render('account/deprecated-signin', {
-      title: 'Sign in to freeCodeCamp using a Deprecated Login'
+      title: 'Sign in to Spiraladder using a Deprecated Login'
     })
   );
 

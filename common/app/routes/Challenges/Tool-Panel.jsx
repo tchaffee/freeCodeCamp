@@ -141,33 +141,9 @@ class ToolPanel extends PureComponent {
             >
           Reset your code
           </Button>
-          <div className='button-spacer' />
-          {
-            guideUrl &&
-              <div>
-                <Button
-                  block={ true }
-                  bsStyle='primary'
-                  className='btn-big'
-                  disabled={ isDisabled }
-                  href={ guideUrl }
-                  target='_blank'
-                  >
-                  Get a hint
-                </Button>
-                <div className='button-spacer' />
-              </div>
-          }
-          <Button
-            block={ true }
-            bsStyle='primary'
-            className='btn-big'
-            disabled={ isDisabled }
-            onClick={ openHelpModal }
-            >
-            Ask for help on the forum
-          </Button>
         <div className='button-spacer' />
+                  disabled={ isDisabled }
+            disabled={ isDisabled }
       </div>
     );
   }

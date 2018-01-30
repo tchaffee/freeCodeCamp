@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { NavbarBrand } from 'react-bootstrap';
 import Media from 'react-media';
 
-const fCClogo = 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg';
+const fCClogo = '/images/teencodecamp_logo.png';
 // TODO @freecodecamp-team: place this glyph in S3 like above, PR in /assets
 const fCCglyph = 'https://raw.githubusercontent.com/freeCodeCamp/assets/' +
 '3b9cafc312802199ebba8b31fb1ed9b466a3efbb/assets/logos/FFCFire.png';
@@ -23,13 +23,13 @@ function NavLogo({ clickOnLogo }) {
           {
             matches => matches ? (
               <img
-                alt='learn to code javascript at freeCodeCamp logo'
+                alt='learn to code javacript at Spiralladder logo'
                 className='nav-logo logo'
                 src={ fCClogo }
               />
             ) : (
               <img
-                alt='learn to code javascript at freeCodeCamp logo'
+                alt='learn to code javascript at Spiralladder logo'
                 className='nav-logo logo'
                 src={ fCCglyph }
               />

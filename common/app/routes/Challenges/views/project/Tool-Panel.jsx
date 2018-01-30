@@ -87,36 +87,6 @@ export class ToolPanel extends PureComponent {
       <div>
         <FormElement isSubmitting={ isSubmitting }/>
         <ButtonSpacer />
-        <Button
-          block={ true }
-          bsStyle='primary'
-          className='btn-primary-ghost btn-big'
-          componentClass='a'
-          href={ `https://gitter.im/freecodecamp/${helpChatRoom}` }
-          target='_blank'
-          >
-          Help
-        </Button>
-        <ButtonSpacer />
-        <Button
-          block={ true }
-          bsStyle='primary'
-          className='btn-primary-ghost btn-big'
-          href={ guideUrl }
-          target='_blank'
-          >
-          Get a hint
-        </Button>
-        <ButtonSpacer />
-        <Button
-          block={ true }
-          bsStyle='primary'
-          className='btn-primary-ghost btn-big'
-          onClick={ openHelpModal }
-          >
-          Ask for help on the forum
-        </Button>
-        <ButtonSpacer />
       </div>
     );
   }

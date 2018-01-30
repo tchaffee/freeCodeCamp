@@ -1,9 +1,9 @@
 {
-  "aboutUrl": "https://www.freecodecamp.org/about",
-  "defaultProfileImage": "https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png",
-  "donateUrl": "https://www.freecodecamp.org/donate",
-  "forumUrl": "https://forum.freecodecamp.org",
-  "githubUrl": "https://github.com/freecodecamp/freecodecamp",
-  "RSA": "https://forum.freecodecamp.org/t/the-read-search-ask-methodology-for-getting-unstuck/137307",
-  "homeURL": "https://freecodecamp.org"
+  "aboutUrl": "https://spiraladder.com/about",
+  "defaultProfileImage": "https://dl.dropbox.com/s/i1bwnfek2vkq58o/profile-pic-default.png?raw=1",
+  "donateUrl": "https://spiraladder.com/donate",
+  "forumUrl": "https://forum.spiraladder.com",
+  "githubUrl": "https://github.com/spiraladder/spiraladder",
+  "RSA": "https://forum.spiraladder.com/t/the-read-search-ask-methodology-for-getting-unstuck/137307",
+  "homeURL": "https://spiraladder.com"
 }
