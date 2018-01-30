@@ -1,0 +1,462 @@
+{
+  "name": "Introduction to HTML",
+  "order": 0,
+  "time": "1 hour",
+  "helpRoom": "Help",
+  "challenges": [
+    {
+      "id": "587d774b367417c4c2512a9b",
+      "title": "Introduction to the Beginner HTML Challenges",
+      "description": [
+        [
+          "",
+          "",
+          "HTML is a language used to build web pages. HTML describes the structure and meaning of different parts of a web page. Click the button below to continue. Sometimes you will need to scroll to see the button.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "HTML <strong>elements</strong> are the building blocks of web pages. <strong>Elements</strong> usually have opening and closing <strong>tags</strong> that surround and give meaning to <strong>content</strong>. For example, there are different tags to place around text to show whether it's a heading, a paragraph, or a list. You don't need to understand what any of this means yet. Just try to remember the key words of \"elements\", \"tags\", and \"content\" and then move on to your next step.",
+          ""
+        ],        [
+          "",
+          "",
+          "This section introduces some HTML elements that give structure and meaning to your web content. In this section we are going to learn HTML by creating web pages. You will be able to enter code and see the results immediately, all right here.",
+          ""
+        ]
+      ],
+      "releasedOn": "",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7,
+      "isRequired": false
+    },
+    {
+      "id": "bd7123c8c441eddfaeb5bdef",
+      "title": "Say Hello to HTML Elements",
+      "description": [
+        "Welcome to the coding challenges. These challenges will walk you through web development step-by-step.",
+        "We recommend you do these in order.",
+        "Also, if you want to save your progress, you should create an account.",
+        "You can edit <code>code</code> in your <code>text editor</code>, which is embedded into this web page.",
+        "Do you see the code in your text editor that says <code>&#60;h1&#62;Hello&#60;/h1&#62;</code>? That's an HTML <code>element</code>.",
+        "Most HTML elements have an <code>opening tag</code> and a <code>closing tag</code>.",
+        "Opening tags look like this:",
+        "<code>&#60;h1&#62;</code>",
+        "Closing tags look like this:",
+        "<code>&#60;/h1&#62;</code>",
+        "The only difference between opening and closing tags is the forward slash: /.",
+        "In between the opening and closing tag is the <code>content</code>. The content in this example is the word \"Hello\".",
+        "Putting it all together, an HTML element is an <code>opening tag</code> followed by <code>content</code> and then a <code>closing tag</code>.",
+        "Each challenge has tests you can run at any time by clicking the \"Run tests\" button (below). When you pass all tests, you'll be prompted to submit your solution and go to the next coding challenge.",
+        "<hr>",
+        "To pass the test on this challenge, change your <code>h1</code> element's content to say \"Hello World\"."
+      ],
+      "challengeSeed": [
+        "<h1>Hello</h1>"
+      ],
+      "tests": [
+        {
+          "text": "Your <code>h1</code> element should have the text \"Hello World\".",
+          "testString": "assert.isTrue((/hello(\\s)+world/gi).test($('h1').text()), 'Your <code>h1</code> element should have the text \"Hello World\".');"
+        }
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf0887a",
+      "title": "Headline with the h2 Element",
+      "description": [
+        "Over the next two sections, we'll build an HTML app that will look something like this:",
+        "<a href=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Friends Photo App\"></a>",
+        "The <code>h2</code> element you enter will create an <code>h2</code> element on the website.",
+        "This element tells the browser about the structure of your website. <code>h1</code> elements are often used for main headings, while <code>h2</code> elements are generally used for subheadings. There are also <code>h3</code>, <code>h4</code>, <code>h5</code> and <code>h6</code> elements to indicate different and new sections.",
+        "<hr>",
+        "Add an <code>h2</code> tag that says \"FriendsPhotoApp\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element."
+      ],
+      "challengeSeed": [
+        "<h1>Hello World</h1>"
+      ],
+      "tests": [
+        "assert(($(\"h2\").length > 0), 'message: Create an <code>h2</code> element.');",
+        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: Make sure your <code>h2</code> element has a closing tag.');",
+        "assert.isTrue((/friendsphotoapp/gi).test($(\"h2\").text()), 'message: Your <code>h2</code> element should have the text \"FriendsPhotoApp\".');",
+        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: Your <code>h1</code> element should have the text \"Hello World\".');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf08801",
+      "title": "Inform with the Paragraph Element",
+      "description": [
+        "<code>p</code> elements are the preferred element for paragraphs of text on websites. P is short for \"paragraph\".",
+        "You can create a <code>p</code> element like this:",
+        "<code>&#60;p&#62;I'm a paragraph!&#60;/p&#62;</code>",
+        "<hr>",
+        "Create a <code>p</code> element below your <code>h2</code> element, and give it the text \"Hello Paragraph\"."
+      ],
+      "challengeSeed": [
+        "<h1>Hello World</h1>",
+        "",
+        "<h2>FriendsPhotoApp</h2>"
+      ],
+      "tests": [
+        "assert(($(\"p\").length > 0), 'message: Create a <code>p</code> element.');",
+        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should have the text \"Hello Paragraph\".');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: Make sure your <code>p</code> element has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf08833",
+      "title": "Fill in the Blank with Placeholder Text",
+      "description": [
+        "Web developers traditionally use <code>lorem ipsum text</code> as placeholder text. The 'lorem ipsum' text is randomly scraped from a famous passage by Cicero of Ancient Rome.",
+        "Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.",
+        "<hr>",
+        "Replace the text inside your <code>p</code> element with the first few words of this lorem ipsum text: <code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum mauris, hendrerit eget facilisis vitae, vestibulum vitae ligula. Mauris bibendum interdum felis quis finibus.</code>"
+      ],
+      "challengeSeed": [
+        "<h1>Hello World</h1>",
+        "",
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<p>Hello Paragraph</p>"
+      ],
+      "tests": [
+        "assert.isTrue((/Lorem(\\s)+ipsum/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should contain the first few words of the provided <code>lorem ipsum text</code>.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fed1348bd9aedf08833",
+      "title": "Delete HTML Elements",
+      "description": [
+        "Our phone doesn't have much vertical space.",
+        "Let's remove the unnecessary elements so we can start building our FriendsPhotoApp.",
+        "<hr>",
+        "Delete your <code>h1</code> element so we can simplify our view."
+      ],
+      "challengeSeed": [
+        "<h1>Hello World</h1>",
+        "",
+        "<h2>FriendsPhotoApp</h2>",
+        "",        
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert(($(\"h1\").length == 0), 'message: Delete your <code>h1</code> element.');",
+        "assert(($(\"h2\").length > 0), 'message: Leave your <code>h2</code> element on the page.');",
+        "assert(($(\"p\").length > 0), 'message: Leave your <code>p</code> element on the page.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "5a58be35992c8c9b501883f9",
+      "title": "Talking about HTML Elements",
+      "description": [
+        "In order to be able to talk with other programmers about HTML we need to make sure we use the right vocabulary Let's do a quick review of what we know so far, and also learn about <code>attributes</code>.",
+        "Remember an HTML element is an <code>opening tag</code> followed by <code>content</code> and then a <code>closing tag</code>:",
+        "<a href=\"//www.dropbox.com/s/jih1cggvpjdj8k9/tcc-html-element.png?raw=1\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of the parts of an html element\" src=\"//www.dropbox.com/s/jih1cggvpjdj8k9/tcc-html-element.png?raw=1\"></a>",
+        "Elements can also have <code>attributes</code>. Attributes contain extra information about the element that can be used for many things. For example, we can give the element a unique identifier using the <code>id</code> attribute:",
+        "<a href=\"//www.dropbox.com/s/fbu5nczf7cpjbzm/tcc-html-attribute.png?raw=1\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of an html attribute\" src=\"//www.dropbox.com/s/fbu5nczf7cpjbzm/tcc-html-attribute.png?raw=1\"></a>",
+        "In the example above, \"id\" is the attribute name and \"foo\" is the attribute value. Notice the attribute is inside the opening tag.",
+        "There is a space between the p element name and the attribute name, followed by an equal sign and then the attribute value, which must be enclosed by quotes.",
+        "<hr>",
+        "Give your <code>p</code> element an id attribute with a value of \"foobar\"."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",        
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert(($(\"p\").attr('id') === 'foobar'), 'message: Make sure you <code>p</code> element has an id attribute with a value of \"foobar\".');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf08812",
+      "title": "Add Images to Your Website",
+      "description": [
+        "You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.",
+        "An example of this would be:",
+        "<code>&#60img src=\"//www.your-image-source.com/your-image.jpg\"&#62</code>",
+        "You might have noticed the <code>img</code> element has no content! And it seems like it is missing the closing tag. When an element does not need the closing tag, we call it self-closing. With this last piece we have learned a lot of what we need to know about the structure of HTML elements.",
+        "To summarize, most elements have an opening and closing tag with content in between. A few elements are self-closing and don't need content or a closing tag. And we are now starting to use attributes. Remember attributes go inside the opening tag.",
+        "All <code>img</code> elements <strong>must</strong> have an <code>alt</code> attribute. The value of an <code>alt</code> attribute is used for screen readers to improve accessibility and is displayed if the image fails to load. The value of the alt attribute should be a short description of the image.",
+        "Let's add an <code>alt</code> attribute to our <code>img</code> example above:",
+        "<code>&#60img src=\"//www.your-image-source.com/your-image.jpg\" alt=\"Author standing on a beach with two thumbs up.\"&#62</code>",
+        "<hr>",
+        "Let's try to add an image to our website:",
+        "Insert an <code>img</code> tag, after the <code>h2</code> element.",
+        "Now set the <code>src</code> attribute so that it points to this url:",
+        "<code>//www.dropbox.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg?raw=1</code>",
+        "Finally don't forget to give your image an <code>alt</code> attribute."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",        
+        "<p id=\"foobar\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert($(\"img\").length > 0, 'message: Your page should have an image element.');",
+        "assert(new RegExp(\"\\/\\/www\\.dropbox\\.com\\/s\\/7hqv52mcunwrl6l\\/tcc-friend-photo\\.jpg\\\\?raw=1\", \"gi\").test($(\"img\").attr(\"src\")), 'message: Your image should have a <code>src</code> attribute that points to the friends image.');",
+        "assert(code.match(/alt\\s*?=\\s*?(\\\"|\\').*(\\\"|\\')/), 'message: Your image element <strong>must</strong> have an <code>alt</code> attribute.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf08816",
+      "title": "Link to External Pages with Anchor Elements",
+      "description": [
+        "<code>a</code> elements, also known as <code>anchor</code> elements, are used to link to other websites or other pages within your website. When a user clicks the link they go to that page.",
+        "Here's an example:",
+        "<code>&#60;a href=\"//www.wikipedia.org\" target=\"_blank\"&#62;link to Wikipedia&#60;/a&#62;</code>",
+        "<hr>",
+        "The <code>href</code> attribute contains the URL of the website you want to link to.",
+        "If you use the <code>target</code> attribute with a value of \"_blank\", the link will open in a new tab or window depending on how the user has their browser configured.",
+        "Create an <code>a</code> element that links to the Wikipedia article on friendship, which has a URL of <code>https://en.wikipedia.org/wiki/Friendship</code> and has \"friendship\" as its <code>anchor text</code>."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<img src=\"//www.dropbox.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg?raw=1\" alt=\"Friends waving out the window of a red building.\">",
+        "",
+        "<p id=\"foobar\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert((/friendship/gi).test($(\"a\").text()), 'message: Your <code>a</code> element should have the <code>anchor text</code> of \"friendship\".');",
+        "assert(/https:\\/\\/en\\.wikipedia\\.org\\/wiki\\/Friendship/gi.test($(\"a\").attr(\"href\")), 'message: You need an <code>a</code> element that links to <code>https://en<wbr>.wikipedia<wbr>.org/<wbr>wiki/<wbr>Friendship</code>');",
+        "assert(code.match(/<\\/a>/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: Make sure your <code>a</code> element has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aede08817",
+      "title": "Nest an Anchor Element within a Paragraph",
+      "description": [
+        "Here's a diagram of a nested <code>a</code> element for your reference:",
+        "<a href=\"//https://dl.dropboxusercontent.com/s/wsyzffa2khotiyu/nested-a-element-diagram.png\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"https://dl.dropboxusercontent.com/s/wsyzffa2khotiyu/nested-a-element-diagram.png\"></a>",
+        "Here's an example:",
+        "<code>&#60;p&#62;To see some art visit &#60;a href=\"https://www.moma.org\"&#62;the MOMA website&#60;/a&#62; and explore the online exhibitions.&#60;/p&#62;</code>",
+        "<code>Nesting</code> just means putting one element inside of another element.",
+        "<hr>",
+        "Now nest your existing <code>a</code> element within a new <code>p</code> element (just after the existing <code>h2</code> element) so that the surrounding paragraph says \"Read about friendship\", but where only \"friendship\" is a link, and the rest of the text is plain text."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>",
+        "",
+        "<img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\">",
+        "",
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert(($(\"a[href=\\\"https://en.wikipedia.org/wiki/Friendship\\\"]\").length > 0), 'message: You need an <code>a</code> element that links to \"https://en.wikipedia.org/wiki/Friendship\".');",
+        "assert($(\"a\").text().match(/friendship/gi), 'message: Your <code>a</code> element should have the anchor text of \"friendship\"');",
+        "assert($(\"p\") && $(\"p\").length > 1, 'message: Create a new <code>p</code> element around your <code>a</code> element. There should be at least 2 total <code>p</code> tags in your HTML code.');",
+        "assert(($(\"a[href=\\\"https://en.wikipedia.org/wiki/Friendship\\\"]\").parent().is(\"p\")), 'message: Your <code>a</code> element should be nested within your new <code>p</code> element.');",
+        "assert(($(\"a[href=\\\"https://en.wikipedia.org/wiki/Friendship\\\"]\").parent().text().match(/Read\\sabout\\s/gi)), 'message: Your <code>p</code> element should have the text \"Read about \" (with a space after it).');",
+        "assert(!$(\"a\").text().match(/Read\\sabout/gi), 'message: Your <code>a</code> element should <em>not</em> have the text \"Read about\".');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<p/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: Make sure each of your <code>p</code> elements has a closing tag.');",
+        "assert(code.match(/<\\/a>/g) && code.match(/<a/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: Make sure each of your <code>a</code> elements has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+
+    {
+      "id": "bad87fee1348bd9aedf08820",
+      "title": "Turn an Image into a Link",
+      "description": [
+        "You can make elements into links by nesting them within an <code>a</code> element.",
+        "Nest your image within an <code>a</code> element. Here's an example:",
+        "<code>&#60;a href=\"#\"&#62;&#60;img src=\"https://upload.wikimedia.org/wikipedia/commons/c/cb/Jacopo_Pontormo_-_Portrait_of_Two_Friends_-_WGA18109.jpg\" alt=\"Jacopo Pontormo - Portrait of Two Friends.\"&#62;&#60;/a&#62;</code>",
+        "Use <code>#</code> as the value of the <code>href</code> attribute. Using <code>#</code> just means to link to the top of the current page. Sometimes we use it as a placeholder when we don't know the URL yet.",
+        "<hr>",
+        "Place the existing image element within an anchor element.",
+        "Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\">",
+        "",
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert($(\"a\").children(\"img\").length > 0, 'message: Nest the existing <code>img</code> element within an <code>a</code> element.');",
+        "assert(new RegExp(\"#\").test($(\"a\").children(\"img\").parent().attr(\"href\")), 'message: Your <code>a</code> element should have the <code>href</code> attribute set to <code>#</code>.');",
+        "assert(code.match(/<\\/a>/g) && code.match(/<a/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: Make sure each of your <code>a</code> elements has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf08827",
+      "title": "Create a Bulleted Unordered List",
+      "description": [
+        "HTML has a special element for creating <code>unordered lists</code>, or bullet point-style lists.",
+        "Unordered lists start with a <code>&#60;ul&#62;</code> element. Then they contain some number of <code>&#60;li&#62;</code> elements.",
+        "For example: ",
+        "<blockquote>&#60;ul&#62;<br>&nbsp;&nbsp;&#60;li&#62;milk&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;cheese&#60;/li&#62;<br>&#60;/ul&#62;</blockquote>",
+        "would create a bullet point-style list of \"milk\" and \"cheese\".",
+        "<hr>",
+        "Remove the last two <code>p</code> elements and create an unordered list of three things you see in the photo for your FriendsPhotoApp."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<p>Climb the fence, books and pens, I can tell we are going to be friends.</p>",
+        "",
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
+      ],
+      "tests": [
+        "assert($(\"ul\").length > 0, 'message: Create a <code>ul</code> element.');",
+        "assert($(\"ul li\").length > 2, 'message: You should have three <code>li</code> elements within your <code>ul</code> element.');",
+        "assert(code.match(/<\\/ul>/gi) && code.match(/<ul/gi) && code.match(/<\\/ul>/gi).length === code.match(/<ul/gi).length, 'message: Make sure your <code>ul</code> element has a closing tag.');",
+        "assert(code.match(/<\\/li>/gi) && code.match(/<li[\\s>]/gi) && code.match(/<\\/li>/gi).length === code.match(/<li[\\s>]/gi).length, 'message: Make sure your <code>li</code> elements have closing tags.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aedf08828",
+      "title": "Create an Ordered List",
+      "description": [
+        "HTML has a special element for creating <code>ordered lists</code>, or numbered-style lists.",
+        "Ordered lists start with a <code>&#60;ol&#62;</code> element. Then they contain some number of <code>&#60;li&#62;</code> elements.",
+        "For example:",
+        "<blockquote>&#60;ol&#62;<br>&nbsp;&nbsp;&#60;li&#62;Garfield&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;Sylvester&#60;/li&#62;<br>&#60;/ol&#62;</blockquote>",
+        "would create a numbered list of \"Garfield\" and \"Sylvester\".",
+        "<hr>",
+        "Create an ordered list of three things not in the photo for your FriendsPhotoApp"
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<p>Things in this photo:</p>",
+        "<ul>",
+        "  <li>A red wall</li>",
+        "  <li>Black t-shirts</li>",
+        "  <li>Friends waving</li>",
+        "</ul>",
+        "<p>Things not in this photo:</p>"
+      ],
+      "tests": [
+        "assert((/Things not in this photo:/i).test($(\"ol\").prev().text()), 'message: You should have an ordered list for \"Things not in this photo:\"');",
+        "assert((/Things in this photo:/i).test($(\"ul\").prev().text()), 'message: You should have an unordered list for \"Things in this photo:\"');",
+        "assert.equal($(\"ul\").length, 1, 'message: You should have only one <code>ul</code> element.');",
+        "assert.equal($(\"ol\").length, 1, 'message: You should have only one <code>ol</code> element.');",
+        "assert.equal($(\"ul li\").length, 3, 'message: You should have three <code>li</code> elements within your <code>ul</code> element.');",
+        "assert.equal($(\"ol li\").length, 3, 'message: You should have three <code>li</code> elements within your <code>ol</code> element.');",
+        "assert(code.match(/<\\/ul>/g) && code.match(/<\\/ul>/g).length === code.match(/<ul>/g).length, 'message: Make sure your <code>ul</code> element has a closing tag.');",
+        "assert(code.match(/<\\/ol>/g) && code.match(/<\\/ol>/g).length === code.match(/<ol>/g).length, 'message: Make sure your <code>ol</code> element has a closing tag.');",
+        "assert(code.match(/<\\/li>/g) && code.match(/<li>/g) && code.match(/<\\/li>/g).length === code.match(/<li>/g).length, 'message: Make sure your <code>li</code> element has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "bad87fee1348bd9aede08835",
+      "title": "Nest Many Elements within a Single div Element",
+      "description": [
+        "The <code>div</code> element, also known as a division element, is a general purpose container for other elements.",
+        "The <code>div</code> element is probably the most commonly used HTML element of all.",
+        "Just like any other non-self-closing element, you can open a <code>div</code> element with <code>&#60;div&#62;</code> and close it on another line with <code>&#60;/div&#62;</code>.",
+        "<hr>",
+        "Nest your \"Things in this photo\" and \"Things not in this photo\" lists all within a single <code>div</code> element.",
+        "Hint: Try putting your opening <code>div</code> tag above your \"Things in this photo\" <code>p</code> element and your closing <code>div</code> tag after your closing <code>ol</code> tag so that both of your lists are within one <code>div</code>."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<p>Things in this photo:</p>",
+        "<ul>",
+        "  <li>A red wall</li>",
+        "  <li>Black t-shirts</li>",
+        "  <li>Friends waving</li>",
+        "</ul>",
+        "",
+        "<p>Things not in this photo:</p>",
+        "<ol>",
+        "  <li>A cute cat</li>",
+        "  <li>Backflips</li>",
+        "  <li>Taylor Swift</li>",
+        "</ol>"
+      ],
+      "tests": [
+        "assert($(\"div\").children(\"p\").length > 1, 'message: Nest your <code>p</code> elements inside your <code>div</code> element.');",
+        "assert($(\"div\").children(\"ul\").length > 0, 'message: Nest your <code>ul</code> element inside your <code>div</code> element.');",
+        "assert($(\"div\").children(\"ol\").length > 0, 'message: Nest your <code>ol</code> element inside your <code>div</code> element.');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<\\/div>/g).length === code.match(/<div>/g).length, 'message: Make sure your <code>div</code> element has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+    {
+      "id": "59f343020046d1a053c789de",
+      "title": "Use the blockquote element for long quotations",
+      "description": [
+        "Whenever possible you should use elements that best describe your content. For example, if you wanted to quote someone famous, you could use the <code>p</code> (paragraph) element or <code>div</code> element. But since HTML already has an element for quotes, it is better to use that element. This is because search engines will be better able to understand exactly what your content is. Screen readers for the blind or other disabled people will also be able to understand your content better. The <code>blockquote</code> element is for longer quotes that should be displayed as their own paragraph, and the <code>q</code> element is for shorter quotes that can be displayed inside a paragraph or other element.",
+        "Try adding a long quote at the bottom of your app. Use \"Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln\" as the text of your quote."
+      ],
+      "challengeSeed": [
+        "<h2>FriendsPhotoApp</h2>",
+        "",
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<div>",
+        "  <p>Things in this photo:</p>",
+        "  <ul>",
+        "    <li>A red wall</li>",
+        "    <li>Black t-shirts</li>",
+        "    <li>Friends waving</li>",
+        "  </ul>",
+        "",
+        "  <p>Things not in this photo:</p>",
+        "  <ol>",
+        "    <li>A cute cat</li>",
+        "    <li>Backflips</li>",
+        "    <li>Taylor Swift</li>",
+        "  </ol>",
+        "<div>"
+      ],
+      "tests": [
+        "assert(($(\"blockquote\").length > 0), 'message: Create a <code>blockquote</code> element.');",
+        "assert.isTrue((/Do I not destroy my enemies when I make them my friends\\? -- Abraham Lincoln/gi).test($(\"blockquote\").text()), 'message: Your <code>blockquote</code> element should have the text \"Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln\".');",
+        "assert(code.match(/<\\/blockquote>/g) && code.match(/<\\/blockquote>/g).length === code.match(/<blockquote/g).length, 'message: Make sure your <code>blockquote</code> element has a closing tag.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    }
+  ]
+}
