@@ -66,16 +66,17 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
+
+
     {
       "id": "bad87fee1348bd9aedf0887a",
       "title": "Headline with the h2 Element",
       "description": [
-        "Over the next two sections, we'll build an HTML app that will look something like this:",
-        "<a href=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Friends Photo App\"></a>",
-        "The <code>h2</code> element you enter will create an <code>h2</code> element on the website.",
-        "This element tells the browser about the structure of your website. <code>h1</code> elements are often used for main headings, while <code>h2</code> elements are generally used for subheadings. There are also <code>h3</code>, <code>h4</code>, <code>h5</code> and <code>h6</code> elements to indicate different and new sections.",
+        "The <code>h2</code> element you enter will create a second level heading element on the website.",
+        "This element tells the browser about the <i>structure</i> of your website. <code>h1</code> elements are used for main headings, while <code>h2</code> elements are used for subheadings. There are also <code>h3</code>, <code>h4</code>, <code>h5</code> and <code>h6</code> elements to indicate different and new sections.",
         "<hr>",
-        "Add an <code>h2</code> tag that says \"FriendsPhotoApp\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element."
+        "Add an <code>h2</code> tag that says \"I am a heading also\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element."
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>"
@@ -83,12 +84,15 @@
       "tests": [
         "assert(($(\"h2\").length > 0), 'message: Create an <code>h2</code> element.');",
         "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: Make sure your <code>h2</code> element has a closing tag.');",
-        "assert.isTrue((/friendsphotoapp/gi).test($(\"h2\").text()), 'message: Your <code>h2</code> element should have the text \"FriendsPhotoApp\".');",
+        "assert.isTrue((/I am a heading also/gi).test($(\"h2\").text()), 'message: Your <code>h2</code> element should have the text \"I am a heading also\".');",
         "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: Your <code>h1</code> element should have the text \"Hello World\".');"
       ],
       "type": "waypoint",
       "challengeType": 0
     },
+
+
+
     {
       "id": "bad87fee1348bd9aedf08801",
       "title": "Inform with the Paragraph Element",
@@ -102,7 +106,7 @@
       "challengeSeed": [
         "<h1>Hello World</h1>",
         "",
-        "<h2>FriendsPhotoApp</h2>"
+        "<h2>I am a heading also</h2>"
       ],
       "tests": [
         "assert(($(\"p\").length > 0), 'message: Create a <code>p</code> element.');",
@@ -112,6 +116,129 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
+{
+  "id": "5ac55bd129a63a93e397598d",
+  "title": "You are ready for your first project!",
+  "description": [
+    [  
+      "//dl.dropboxusercontent.com/s/2mrt5t4px5i80vq/tcc-codepen-fork-me.png",
+      "A picture showing the first project which is an informational article.",
+      "With what you have learned so far you are already ready to build your first web page! Using the h1, h2, h3, and p elements you will create a web page that is a simple informational article",
+      ""
+    ],
+    [
+      "//i.imgur.com/G1saeDt.gif",
+      "A gif showing how to create a Codepen account.",
+      "For this project, we'll use a popular browser-based code editor called CodePen. Click the \"Open link in new tab\" button below to open CodePen's signup page. Fill out the form and click \"Sign up\". <br><div class=\"small\">Note: If you already have a CodePen account, you can skip this step by clicking \"Open link in new tab\", closing the new tab that opens, then clicking \"go to my next step\".",
+      "https://codepen.io/accounts/signup/user/free"
+    ],
+    [
+      "//i.imgur.com/U4y9RJ1.gif",
+      "A gif showing that you can type \"hello world\" will output \"hello world\" in the preview window. You can also drag windows to resize them, and change their orientation.",
+      "In the HTML box, create an <code>h1</code> element with the text \"Hello World\". You can drag the frames around to resize them. You can also click the \"Change View\" button and change the orientation of the frames. Play around as much as you want to familiarize yourself with Codepen. If you get stuck, you can click your Codepen profile and then \"Help\" for Codepen documentation.",
+      ""
+    ],
+    [
+      "",
+      "",
+      "Now that you have an account, you can create as many Codepens as you want for your own websites. We are done with the \"Hello World\" Codepen so you can delete it, or leave it there for trying out HTML and doing experiments. In the next steps we will learn about another way to create new Codepens that you will need to use for your assigned projects.",
+      ""
+    ]
+  ],
+  "challengeSeed": [],
+  "tests": [],
+  "type": "waypoint",
+  "isRequired": false,
+  "challengeType": 7
+},
+{
+  "id": "5a96f2396033eff2641401c4",
+  "title": "Forking a CodePen to start a new project",
+  "description": [
+    [
+      "//dl.dropboxusercontent.com/s/2mrt5t4px5i80vq/tcc-codepen-fork-me.png",
+      "A picture showing how to fork a Codepen.",
+      "Now you will learn how to fork a CodePen to start each new project. See the picture above.<br>\"Forking\" code is similar to copying it and that definition is good enough for now.<br>Click the \"Open link in new tab\" button below and it will open a Codepen. Fork that Codepen to start your next project. Come back here when you have pressed the \"Fork\" button.",
+      "https://codepen.io/tchaffee/pen/XVRzMz"
+    ],
+    [
+      "//dl.dropboxusercontent.com/s/1xzm4zl60h6ouqa/tcc-codepen-rename-fork.png",
+      "A picture showing how to change the title of a Codepen.",
+      "Remember to change the title of your Codepen after you fork it (see above). For example, for your first project change the title to \"Spiraladder: Informational Article Project\"<br>Remember to save your work often!",
+      ""
+    ]
+  ],
+  "challengeSeed": [],
+  "tests": [],
+  "type": "waypoint",
+  "isRequired": false,
+  "challengeType": 7
+},  
+
+{
+  "id": "bd7158d8c442eddfaeb5bd18",
+  "title": "Build an Informational Article Page",
+  "description": [
+    "Choose a topic that is interesting to you. Don't spend too much time getting the words in the article perfect. The goal is to practice using the elements you have learned so far.",
+    "Here's a <a href='https://dl.dropboxusercontent.com/s/ezw62vubwq16w9y/tcc-tribute-page-example-image.png' target='_blank'>picture of an example Informational Page </a> so you can see what a finished project looks like.",
+    "Use the forked Codepen you created in the previous section to code your informational article.",
+    "In your forked Codepen, run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished Informational Article Project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+    "When you're done, use the button below to submit the URL to your working project."
+  ],
+  "releasedOn": "April 5, 2018",
+  "challengeSeed": [ "Nk0DzQi" ],
+  "tests": [],
+  "type": "zipline",
+  "isRequired": true,
+  "challengeType": 3
+},
+
+{
+  "id": "5ac6808f02e614815aed5bdd",
+  "title": "Revisiting the h2 Element",
+  "description": [
+    "Now that you have completed your first web page, let's learn some more. Over the next two sections, we'll build an HTML app that will look something like this:",
+    "<a href=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Friends Photo App\"></a>",
+    "You might have noticed by now that lower level headings use smaller font sizes. It is important to understand that we do not use headings for how they make text look, but instead for giving meaning to our documents. When using headings you should not skip heading levels. Always start with <code>h1</code>, next use <code>h2</code>, and so on.",
+    "<hr>",
+    "Add an <code>h2</code> tag that says \"FriendsPhotoApp\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element."
+  ],
+  "challengeSeed": [
+    "<h1>Hello World</h1>"
+  ],
+  "tests": [
+    "assert(($(\"h2\").length > 0), 'message: Create an <code>h2</code> element.');",
+    "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: Make sure your <code>h2</code> element has a closing tag.');",
+    "assert.isTrue((/friendsphotoapp/gi).test($(\"h2\").text()), 'message: Your <code>h2</code> element should have the text \"FriendsPhotoApp\".');",
+    "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: Your <code>h1</code> element should have the text \"Hello World\".');"
+  ],
+  "type": "waypoint",
+  "challengeType": 0
+},
+
+{
+  "id": "5ac680e0a7154ca7da6031f9",
+  "title": "Revisiting the Paragraph Element",
+  "description": [
+    "Remember that <code>p</code> element tells the browser the content is a paragraph of text. The browser will display the paragraph differently from headings, but again it is important to remember that we use HTML elements to give our documents structure and meaning and not to change the appearance of text. We will learn about how to control the appearance of text later. For now we are learning only how to tell the browser what type the content is.",
+    "<hr>",
+    "Create a <code>p</code> element below your <code>h2</code> element, and give it the text \"Hello Paragraph\"."
+  ],
+  "challengeSeed": [
+    "<h1>Hello World</h1>",
+    "",
+    "<h2>I am a heading also</h2>"
+  ],
+  "tests": [
+    "assert(($(\"p\").length > 0), 'message: Create a <code>p</code> element.');",
+    "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should have the text \"Hello Paragraph\".');",
+    "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: Make sure your <code>p</code> element has a closing tag.');"
+  ],
+  "type": "waypoint",
+  "challengeType": 0
+},
+
     {
       "id": "bad87fee1348bd9aedf08833",
       "title": "Fill in the Blank with Placeholder Text",

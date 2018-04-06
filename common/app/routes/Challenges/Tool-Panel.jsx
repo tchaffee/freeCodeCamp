@@ -142,8 +142,6 @@ class ToolPanel extends PureComponent {
           Reset your code
           </Button>
         <div className='button-spacer' />
-                  disabled={ isDisabled }
-            disabled={ isDisabled }
       </div>
     );
   }
