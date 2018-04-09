@@ -73,8 +73,8 @@
       "id": "bad87fee1348bd9aedf0887a",
       "title": "Headline with the h2 Element",
       "description": [
-        "The <code>h2</code> element you enter will create a second level heading element on the website.",
-        "This element tells the browser about the <i>structure</i> of your website. <code>h1</code> elements are used for main headings, while <code>h2</code> elements are used for subheadings. There are also <code>h3</code>, <code>h4</code>, <code>h5</code> and <code>h6</code> elements to indicate different and new sections.",
+        "The <code>h2</code> element is used to create a second level heading element.",
+        "Elements tell the browser about the <i>structure</i> of your website. <code>h1</code> elements are used for main headings, while <code>h2</code> elements are used for subheadings. There are also <code>h3</code>, <code>h4</code>, <code>h5</code> and <code>h6</code> elements to indicate different and new sections.",
         "<hr>",
         "Add an <code>h2</code> tag that says \"I am a heading also\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element."
       ],
@@ -124,7 +124,7 @@
     [  
       "//dl.dropboxusercontent.com/s/2mrt5t4px5i80vq/tcc-codepen-fork-me.png",
       "A picture showing the first project which is an informational article.",
-      "With what you have learned so far you are already ready to build your first web page! Using the h1, h2, h3, and p elements you will create a web page that is a simple informational article",
+      "With what you have learned so far you are already ready to build your first web page! Using the h1, h2, h3, and p elements you will create a web page that is a simple informational article.",
       ""
     ],
     [
@@ -182,8 +182,7 @@
   "description": [
     "Choose a topic that is interesting to you. Don't spend too much time getting the words in the article perfect. The goal is to practice using the elements you have learned so far.",
     "Here's a <a href='https://dl.dropboxusercontent.com/s/ezw62vubwq16w9y/tcc-tribute-page-example-image.png' target='_blank'>picture of an example Informational Page </a> so you can see what a finished project looks like.",
-    "Use the forked Codepen you created in the previous section to code your informational article.",
-    "In your forked Codepen, run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished Informational Article Project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+    "In your forked Codepen (from the previous step), run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished Informational Article Project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
     "When you're done, use the button below to submit the URL to your working project."
   ],
   "releasedOn": "April 5, 2018",
@@ -200,7 +199,7 @@
   "description": [
     "Now that you have completed your first web page, let's learn some more. Over the next two sections, we'll build an HTML app that will look something like this:",
     "<a href=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Friends Photo App\"></a>",
-    "You might have noticed by now that lower level headings use smaller font sizes. It is important to understand that we do not use headings for how they make text look, but instead for giving meaning to our documents. When using headings you should not skip heading levels. Always start with <code>h1</code>, next use <code>h2</code>, and so on.",
+    "You might have noticed by now that lower level headings (like h2 and h3) use smaller font sizes. It is important to understand we do not use headings for how they make text look, but instead for giving meaning to our documents. When using headings you should not skip heading levels. Always start with <code>h1</code>, next use <code>h2</code>, and so on.",
     "<hr>",
     "Add an <code>h2</code> tag that says \"FriendsPhotoApp\" to create a second HTML <code>element</code> below your \"Hello World\" <code>h1</code> element."
   ],
@@ -221,7 +220,7 @@
   "id": "5ac680e0a7154ca7da6031f9",
   "title": "Revisiting the Paragraph Element",
   "description": [
-    "Remember that <code>p</code> element tells the browser the content is a paragraph of text. The browser will display the paragraph differently from headings, but again it is important to remember that we use HTML elements to give our documents structure and meaning and not to change the appearance of text. We will learn about how to control the appearance of text later. For now we are learning only how to tell the browser what type the content is.",
+    "Remember the <code>p</code> element tells the browser the content is a paragraph of text. The browser will display the paragraph differently from headings, but again it is important to remember that we use elements to give our documents structure and meaning and not to change the appearance of text. We will learn later about how to control the appearance of elements. For now we are learning only how to tell the browser what <i>type</i> the content is.",
     "<hr>",
     "Create a <code>p</code> element below your <code>h2</code> element, and give it the text \"Hello Paragraph\"."
   ],
