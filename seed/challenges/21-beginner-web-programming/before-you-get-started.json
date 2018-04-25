@@ -1,0 +1,44 @@
+{
+  "name": "A few things before you get started",
+  "order": 0,
+  "time": "15 minutes",
+  "helpRoom": "Help",
+  "challenges": [
+    {
+      "id": "5ac55bd129a63a93e397598d",
+      "title": "Create a CodePen Account",
+      "description": [
+        [
+          "",
+          "",
+          "Click the button below to continue when you are done reading this page. Sometimes you will need to scroll to see the button on some pages depending on your device. Please make sure you are signed in so your progress will be saved. You can tell you are signed in because there will be a \"Settings\" button in the navigation bar at the top of this page and you will not see a \"Sign Up\" button.",
+          ""
+        ],
+        [
+          "https://dl.dropbox.com/s/58y3yd54ly8ykai/codepen-sign-up.png?raw=1",
+          "A picture showing the Codepen signup page.",
+          "In addition to doing coding right here, we will also use a popular browser-based code editor called CodePen. Click the \"Open link in new tab\" button below to open CodePen's signup page. You can use any sign up method you prefer. If you are unsure, use the button to sign up with your email.<br><div class=\"small\">Note: If you already have a CodePen account, you can skip this step by clicking \"Open link in new tab\", closing the new tab that opens, then clicking \"go to my next step\".",
+          "https://codepen.io/accounts/signup/user/free"
+        ],
+        [
+          "https://dl.dropbox.com/s/fjqen7v501jy271/codepen-basics-intro.gif?raw=1",
+          "An gif showing CodePen basic features that are also described in the text on this page.",
+          "For now all you need is to sign up to CodePen, so you are almost done. The video above shows some features of CodePen you will need to use. Try to find the following features in the video:<br/><ul><li>You can change the editor layout to what is most comfortable for you.</li><li>Always change the title when you start a new CodePen to keep track of what it is for.</li><li>You can type code in the HTML pane and see the output in the preview pane.</li></ul>",
+          ""
+        ],
+        [
+          "https://dl.dropbox.com/s/fjqen7v501jy271/codepen-basics-intro.gif?raw=1",
+          "An gif showing CodePen basic features that are also described in the text on this page.",
+          "Now try to find these other CodePen features in the same video:<br/><ul><li>You can adjust the size of the editor panes.</li><li>Always save your work and often.</li><li>You can change the view of a saved CodePen to view only your full web page with no code. Notice that the URL changes when you change to the \"full view\". That's the URL you should copy for sharing your web pages with friends and family.</li></ul>Those basics are enough to get you started with CodePen. But if you get stuck, you can click your Codepen profile and then \"Help\" for Codepen documentation. You don't need to remember all of this. You can come back to this lesson if you forget.",
+          ""
+        ]        
+      ],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "isRequired": false,
+      "challengeType": 7
+    }
+
+]
+}

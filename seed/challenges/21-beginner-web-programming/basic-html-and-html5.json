@@ -1,6 +1,6 @@
 {
   "name": "Introduction to HTML",
-  "order": 0,
+  "order": 1,
   "time": "1 hour",
   "helpRoom": "Help",
   "challenges": [
@@ -11,7 +11,7 @@
         [
           "",
           "",
-          "HTML is a language used to build web pages. HTML describes the structure and meaning of different parts of a web page. Click the button below to continue. Sometimes you will need to scroll to see the button.",
+          "HTML is a language used to build web pages. HTML describes the structure and meaning of different parts of a web page.",
           ""
         ],
         [
@@ -22,7 +22,7 @@
         ],        [
           "",
           "",
-          "This section introduces some HTML elements that give structure and meaning to your web content. In this section we are going to learn HTML by creating web pages. You will be able to enter code and see the results immediately, all right here.",
+          "This section introduces some HTML elements that give structure and meaning to your web content. You are going to learn HTML by creating web pages. You will be able to enter code and see the results immediately, all right here.",
           ""
         ]
       ],
@@ -117,49 +117,21 @@
       "challengeType": 0
     },
 
-{
-  "id": "5ac55bd129a63a93e397598d",
-  "title": "You are ready for your first project!",
-  "description": [
-    [  
-      "//dl.dropboxusercontent.com/s/2mrt5t4px5i80vq/tcc-codepen-fork-me.png",
-      "A picture showing the first project which is an informational article.",
-      "With what you have learned so far you are already ready to build your first web page! Using the h1, h2, h3, and p elements you will create a web page that is a simple informational article.",
-      ""
-    ],
-    [
-      "//i.imgur.com/G1saeDt.gif",
-      "A gif showing how to create a Codepen account.",
-      "For this project, we'll use a popular browser-based code editor called CodePen. Click the \"Open link in new tab\" button below to open CodePen's signup page. Fill out the form and click \"Sign up\". <br><div class=\"small\">Note: If you already have a CodePen account, you can skip this step by clicking \"Open link in new tab\", closing the new tab that opens, then clicking \"go to my next step\".",
-      "https://codepen.io/accounts/signup/user/free"
-    ],
-    [
-      "//i.imgur.com/U4y9RJ1.gif",
-      "A gif showing that you can type \"hello world\" will output \"hello world\" in the preview window. You can also drag windows to resize them, and change their orientation.",
-      "In the HTML box, create an <code>h1</code> element with the text \"Hello World\". You can drag the frames around to resize them. You can also click the \"Change View\" button and change the orientation of the frames. Play around as much as you want to familiarize yourself with Codepen. If you get stuck, you can click your Codepen profile and then \"Help\" for Codepen documentation.",
-      ""
-    ],
-    [
-      "",
-      "",
-      "Now that you have an account, you can create as many Codepens as you want for your own websites. We are done with the \"Hello World\" Codepen so you can delete it, or leave it there for trying out HTML and doing experiments. In the next steps we will learn about another way to create new Codepens that you will need to use for your assigned projects.",
-      ""
-    ]
-  ],
-  "challengeSeed": [],
-  "tests": [],
-  "type": "waypoint",
-  "isRequired": false,
-  "challengeType": 7
-},
+
 {
   "id": "5a96f2396033eff2641401c4",
   "title": "Forking a CodePen to start a new project",
   "description": [
     [
+      "",
+      "",
+      "You are ready for your first project! You will create an informational article using the h1, h2, h3, and p elements.",
+      ""
+    ],
+    [
       "//dl.dropboxusercontent.com/s/2mrt5t4px5i80vq/tcc-codepen-fork-me.png",
       "A picture showing how to fork a Codepen.",
-      "Now you will learn how to fork a CodePen to start each new project. See the picture above.<br>\"Forking\" code is similar to copying it and that definition is good enough for now.<br>Click the \"Open link in new tab\" button below and it will open a Codepen. Fork that Codepen to start your next project. Come back here when you have pressed the \"Fork\" button.",
+      "First you will learn how to fork a CodePen to start each new project. See the picture above.<br>\"Forking\" code is similar to copying it and that definition is good enough for now.<br>Click the \"Open link in new tab\" button below and it will open a Codepen. Fork that Codepen to start your next project. Come back here when you have pressed the \"Fork\" button.",
       "https://codepen.io/tchaffee/pen/XVRzMz"
     ],
     [
@@ -177,11 +149,11 @@
 },  
 
 {
-  "id": "bd7158d8c442eddfaeb5bd18",
+  "id": "5acfd176fdcb9a7e8278bec7",
   "title": "Build an Informational Article Page",
   "description": [
-    "Choose a topic that is interesting to you. Don't spend too much time getting the words in the article perfect. The goal is to practice using the elements you have learned so far.",
-    "Here's a <a href='https://dl.dropboxusercontent.com/s/ezw62vubwq16w9y/tcc-tribute-page-example-image.png' target='_blank'>picture of an example Informational Page </a> so you can see what a finished project looks like.",
+    "Choose a topic that is interesting to you. Don't spend too much time getting the words in the article perfect. The goal is to practice using the elements you have learned so far: h1, h2, h3, and p.",
+    "Here's a <a href='https://dl.dropbox.com/s/kdreav9a81r0ghx/tcc-informational-article-example.png?raw=1' target='_blank'>picture of an example Informational Article Page </a> so you can see what a finished project looks like. Your article can be much shorter than the example if you want.",
     "In your forked Codepen (from the previous step), run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished Informational Article Project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
     "When you're done, use the button below to submit the URL to your working project."
   ],
@@ -197,7 +169,7 @@
   "id": "5ac6808f02e614815aed5bdd",
   "title": "Revisiting the h2 Element",
   "description": [
-    "Now that you have completed your first web page, let's learn some more. Over the next two sections, we'll build an HTML app that will look something like this:",
+    "Now that you have completed your first web page, you are ready to learn some more. In the following challenges you will build an HTML app that will look something like this:",
     "<a href=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//dl.dropboxusercontent.com/s/7umgjyqom506aw1/tcc-friend-photo-app-final.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Friends Photo App\"></a>",
     "You might have noticed by now that lower level headings (like h2 and h3) use smaller font sizes. It is important to understand we do not use headings for how they make text look, but instead for giving meaning to our documents. When using headings you should not skip heading levels. Always start with <code>h1</code>, next use <code>h2</code>, and so on.",
     "<hr>",
@@ -242,7 +214,7 @@
       "id": "bad87fee1348bd9aedf08833",
       "title": "Fill in the Blank with Placeholder Text",
       "description": [
-        "Web developers traditionally use <code>lorem ipsum text</code> as placeholder text. The 'lorem ipsum' text is randomly scraped from a famous passage by Cicero of Ancient Rome.",
+        "Web developers traditionally use <code>lorem ipsum text</code> as placeholder text. The 'lorem ipsum' text is copied from a famous passage by Cicero of Ancient Rome.",
         "Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.",
         "<hr>",
         "Replace the text inside your <code>p</code> element with the first few words of this lorem ipsum text: <code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum mauris, hendrerit eget facilisis vitae, vestibulum vitae ligula. Mauris bibendum interdum felis quis finibus.</code>"
@@ -267,7 +239,7 @@
         "Our phone doesn't have much vertical space.",
         "Let's remove the unnecessary elements so we can start building our FriendsPhotoApp.",
         "<hr>",
-        "Delete your <code>h1</code> element so we can simplify our view."
+        "Delete your <code>h2</code> element so we can simplify our view. Change the content of your <code>h1</code> element to \"FriendsPhotoApp\"."
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
@@ -277,8 +249,9 @@
         "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
       ],
       "tests": [
-        "assert(($(\"h1\").length == 0), 'message: Delete your <code>h1</code> element.');",
-        "assert(($(\"h2\").length > 0), 'message: Leave your <code>h2</code> element on the page.');",
+        "assert(($(\"h2\").length == 0), 'message: Delete your <code>h2</code> element.');",
+        "assert(($(\"h1\").length > 0), 'message: Leave your <code>h1</code> element on the page.');",
+        "assert.isTrue((/friendsphotoapp/gi).test($(\"h1\").text()), 'message: Your <code>h1</code> element should have the text \"FriendsPhotoApp\".');",
         "assert(($(\"p\").length > 0), 'message: Leave your <code>p</code> element on the page.');"
       ],
       "type": "waypoint",
@@ -293,13 +266,13 @@
         "<a href=\"//www.dropbox.com/s/jih1cggvpjdj8k9/tcc-html-element.png?raw=1\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of the parts of an html element\" src=\"//www.dropbox.com/s/jih1cggvpjdj8k9/tcc-html-element.png?raw=1\"></a>",
         "Elements can also have <code>attributes</code>. Attributes contain extra information about the element that can be used for many things. For example, we can give the element a unique identifier using the <code>id</code> attribute:",
         "<a href=\"//www.dropbox.com/s/fbu5nczf7cpjbzm/tcc-html-attribute.png?raw=1\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of an html attribute\" src=\"//www.dropbox.com/s/fbu5nczf7cpjbzm/tcc-html-attribute.png?raw=1\"></a>",
-        "In the example above, \"id\" is the attribute name and \"foo\" is the attribute value. Notice the attribute is inside the opening tag.",
+        "In the example above, \"id\" is the <code>attribute name</code> and \"foo\" is the <code>attribute value</code>. Notice the attribute is inside the opening tag.",
         "There is a space between the p element name and the attribute name, followed by an equal sign and then the attribute value, which must be enclosed by quotes.",
         "<hr>",
         "Give your <code>p</code> element an id attribute with a value of \"foobar\"."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",        
         "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
       ],
@@ -316,20 +289,20 @@
         "You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.",
         "An example of this would be:",
         "<code>&#60img src=\"//www.your-image-source.com/your-image.jpg\"&#62</code>",
-        "You might have noticed the <code>img</code> element has no content! And it seems like it is missing the closing tag. When an element does not need the closing tag, we call it self-closing. With this last piece we have learned a lot of what we need to know about the structure of HTML elements.",
-        "To summarize, most elements have an opening and closing tag with content in between. A few elements are self-closing and don't need content or a closing tag. And we are now starting to use attributes. Remember attributes go inside the opening tag.",
+        "You might have noticed the <code>img</code> element has no content! And it is missing the closing tag. When an element does not need the closing tag, we call it self-closing. With this last piece about self-closing elements, you have learned a lot of what you need to know about the structure of HTML elements.",
+        "To summarize, most elements have an opening and closing tag with content in between. A few elements are self-closing and don't need content or a closing tag. And you are now starting to use attributes. Remember attributes go inside the opening tag.",
         "All <code>img</code> elements <strong>must</strong> have an <code>alt</code> attribute. The value of an <code>alt</code> attribute is used for screen readers to improve accessibility and is displayed if the image fails to load. The value of the alt attribute should be a short description of the image.",
-        "Let's add an <code>alt</code> attribute to our <code>img</code> example above:",
+        "This is how you would add an <code>alt</code> attribute to the <code>img</code> example above:",
         "<code>&#60img src=\"//www.your-image-source.com/your-image.jpg\" alt=\"Author standing on a beach with two thumbs up.\"&#62</code>",
         "<hr>",
-        "Let's try to add an image to our website:",
+        "Try to add an image to our website:",
         "Insert an <code>img</code> tag, after the <code>h2</code> element.",
         "Now set the <code>src</code> attribute so that it points to this url:",
         "<code>//www.dropbox.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg?raw=1</code>",
         "Finally don't forget to give your image an <code>alt</code> attribute."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",        
         "<p id=\"foobar\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis. Nullam nec cursus diam, nec lobortis magna. Mauris pharetra eros id fermentum vulputate.</p>"
       ],
@@ -381,7 +354,7 @@
         "Now nest your existing <code>a</code> element within a new <code>p</code> element (just after the existing <code>h2</code> element) so that the surrounding paragraph says \"Read about friendship\", but where only \"friendship\" is a link, and the rest of the text is plain text."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>",
         "",
@@ -416,7 +389,7 @@
         "Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -445,7 +418,7 @@
         "Remove the last two <code>p</code> elements and create an unordered list of three things you see in the photo for your FriendsPhotoApp."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -477,7 +450,7 @@
         "Create an ordered list of three things not in the photo for your FriendsPhotoApp"
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -517,7 +490,7 @@
         "Hint: Try putting your opening <code>div</code> tag above your \"Things in this photo\" <code>p</code> element and your closing <code>div</code> tag after your closing <code>ol</code> tag so that both of your lists are within one <code>div</code>."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -554,7 +527,7 @@
         "Try adding a long quote at the bottom of your app. Use \"Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln\" as the text of your quote."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -583,6 +556,51 @@
       ],
       "type": "waypoint",
       "challengeType": 0
+    },
+
+    {
+      "id": "5aceb3c8712876550dadad80",
+      "title": "Build a Product Landing Page",
+      "description": [
+        "A landing page is a single web page that can be used to feature a few products, often from an advertising campaign. Usually landing pages are supposed to look great, but to start you are going to concentrate on the HTML and structure of your landing page. You will improve the look in another project. Your landing page will feature three products.",
+        "You will need to use images in your landing page. You can use the URLs below for the <code>src</code> attribute of your images",
+        "https://dl.dropbox.com/s/5dlbrf4c551i4ap/dji-mavic-pro-small.png?raw=1",
+        "https://dl.dropbox.com/s/nga2x5zo36t1jou/uto-drone-u960-small.png?raw=1",
+        "https://dl.dropbox.com/s/n95i4191bj9r1yl/altair-aerial-aa108-small.png?raw=1",
+        "Here's a <a href='https://dl.dropbox.com/s/au7t0bnreoq3hlp/product-landing-page-example.png?raw=1' target='_blank'>picture of an example Product Landing Page </a> so you can see what a finished project looks like.",
+        "Build your project by forking <a href='https://codepen.io/tchaffee/pen/XVRzMz' target='_blank'>this CodePen pen</a>.",
+        "Make sure you change the title of the CodePen after you fork it.",
+        "Remember select the right test suite (\"Product Landing Page I\") and then run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+        "When you're done, use the button below to submit the URL to your working project."
+      ],
+      "releasedOn": "April 5, 2018",
+      "challengeSeed": [ "Nk0DzQi" ],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
+    },
+
+
+    {
+      "id": "bd7158d8c442eddfaeb5bd18",
+      "title": "Build a Tribute Page",
+      "description": [
+        "Build a Tribute Page to recognize someone you look up to or who is important to you.",
+        "Here's a <a href='https://dl.dropboxusercontent.com/s/ezw62vubwq16w9y/tcc-tribute-page-example-image.png' target='_blank'>picture of an example Tribute Page </a> so you can see what a finished project looks like.",
+        "Build your project by forking <a href='https://codepen.io/tchaffee/pen/XVRzMz' target='_blank'>this CodePen pen</a>.",
+        "Remember to select the right test suite (\"Tribute Page I\") and then run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+        "When you're done, use the button below to submit the URL to your working project."
+      ],
+      "releasedOn": "April 5, 2018",
+      "challengeSeed": [ "Nk0DzQi" ],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
     }
+
+
+
   ]
 }
