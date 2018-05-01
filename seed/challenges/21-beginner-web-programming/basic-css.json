@@ -191,6 +191,28 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
+    {
+      "id": "5ae39e307b65708139a44610",
+      "title": "Build a Fonts as Friends Page",
+      "description": [
+        "Build a page using various CSS styles to give your paragraphs different personalities.",
+        "Here's a <a href='#' target='_blank'>picture of an example Fonts as Friends Page </a> so you can see what a finished project looks like.",
+        "Build your project by forking <a href='https://codepen.io/tchaffee/pen/XVRzMz' target='_blank'>this CodePen pen</a>.",
+        "Remember to select the right test suite (\"Fonts as Friends I\") and then run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+        "When you're done, use the button below to submit the URL to your working project."
+      ],
+      "releasedOn": "April 27, 2018",
+      "challengeSeed": [ "Nk0DzQi" ],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
+    }
+
+
+
+
     {
       "id": "bad87fee1348bd9aefe08806",
       "title": "Style Multiple Elements with a CSS Class",
