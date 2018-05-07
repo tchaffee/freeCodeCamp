@@ -192,23 +192,7 @@
       "challengeType": 0
     },
 
-    {
-      "id": "5ae39e307b65708139a44610",
-      "title": "Build a Fonts as Friends Page",
-      "description": [
-        "Build a page using various CSS styles to give your paragraphs different personalities.",
-        "Here's a <a href='#' target='_blank'>picture of an example Fonts as Friends Page </a> so you can see what a finished project looks like.",
-        "Build your project by forking <a href='https://codepen.io/tchaffee/pen/XVRzMz' target='_blank'>this CodePen pen</a>.",
-        "Remember to select the right test suite (\"Fonts as Friends I\") and then run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
-        "When you're done, use the button below to submit the URL to your working project."
-      ],
-      "releasedOn": "April 27, 2018",
-      "challengeSeed": [ "Nk0DzQi" ],
-      "tests": [],
-      "type": "zipline",
-      "isRequired": true,
-      "challengeType": 3
-    }
+
 
 
 
@@ -314,12 +298,13 @@
       "challengeType": 0
     },
 
+
     {
       "id": "5a1efb047358f53b18cd6a5f",
       "title": "Change the Font Style of an Element",
       "description": [
         "Font style is controlled by the <code>font-style</code> CSS property, like this:",
-        "<blockquote>h1 {<br>&nbsp;&nbsp;font-style: bold;<br>}</blockquote>",
+        "<blockquote>h1 {<br>&nbsp;&nbsp;font-style: oblique;<br>}</blockquote>",
         "<hr>",
         "Change the <code>intro</code> class to make the font italic. HINT: Make sure you don't change anything else in the <code>intro</code> class so that it stays red."
       ],
@@ -366,15 +351,16 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
     {
       "id": "bad87fee1348bd9aede08807",
       "title": "Set the Font Family of an Element",
       "description": [
         "You can set an element's font by using the <code>font-family</code> property.",
-        "For example, if you wanted to set your <code>h2</code> element's font to <code>Sans-Serif</code>, you would use the following CSS:",
-        "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: Sans-Serif;<br>}</blockquote>",
+        "For example, if you wanted to set your <code>h2</code> element's font to a <code>sans-serif</code> font, you would use the following CSS:",
+        "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: sans-serif;<br>}</blockquote>",
         "<hr>",
-        "Make all of your <code>p</code> elements use the <code>Monospace</code> font."
+        "Make all of your <code>p</code> elements use a <code>monospace</code> font."
       ],
       "challengeSeed": [
         "<style>",
@@ -420,16 +406,16 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
     {
-      "id": "bad87fee1348bd9acdf08812",
-      "title": "Size Your Images",
+      "id": "5aea0d568ddfaca4b5878bbf",
+      "title": "Make a Font Bold",
       "description": [
-        "CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.",
-        "For example, if we wanted to create a CSS class called <code>heading-image</code> that gave HTML elements a width of 500 pixels, we'd use:",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.heading-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "You can make an element's font bold or lighter by using the <code>font-weight</code> property. Font-weight starts at 100 for the lightest, and goes in increments of 100 all the way up to 900 for the boldest font.",
+        "For example, if you wanted to set your <code>h2</code> element's font to a very light font, you would use the following CSS:",
+        "<blockquote>h2 {<br>&nbsp;&nbsp;font-weight: 100;<br>}</blockquote>",
         "<hr>",
-        "Create a class called <code>intro-image</code> and use it to resize the image so that it's only 100 pixels wide.",
-        "<strong>Note</strong><br>You may need to set your browser to 100% zoom to pass the tests on this challenge. Ask someone if you don't know what this means and your tests do not pass."
+        "Change your intro class <code>p</code> element to use a font-weight of <code>700</code> font."
       ],
       "challengeSeed": [
         "<style>",
@@ -440,7 +426,6 @@
         "",
         "  p {",
         "    font-size: 16px;",
-        "    font-family: Monospace;",
         "  }",
         "</style>",
         "",
@@ -471,12 +456,14 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert($(\"img[src='https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg']\").attr('class') === \"intro-image\", 'message: Your <code>img</code> element should have the class <code>intro-image</code>.');",
-        "assert($(\"img\").width() === 100, 'message: Your image should be 100 pixels wide. Browser zoom should be at 100%.');"
+        "assert(code.match(/\\.intro\\s*{\\s*color\\s*:\\s*red\\s*;\\s*font-style\\s*:\\s*italic\\s*;\\s*font-weight\\s*:\\s*700\\s*;\\s*}/i), 'message: Between the <code>style</code> tags, give the <code>intro</code> class a <code>font-weight</code> of <code>700</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 0
     },
+
+
+
     {
       "id": "bad87fed1348bd9aede07836",
       "title": "Give a Background Color to a div Element",
@@ -492,10 +479,7 @@
         "  .intro {",
         "    color: red;",
         "    font-style: italic;",
-        "  }",
-        "",
-        "  .intro-image {",
-        "    width: 100px;",
+        "    font-weight: 700;",
         "  }",
         "",
         "  p {",
@@ -537,6 +521,90 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
+    {
+      "id": "5ae39e307b65708139a44610",
+      "title": "Build a Fonts as Friends Page",
+      "description": [
+        "Build a page using various CSS styles to give your paragraphs different personalities.",
+        "Here's a <a href='https://dl.dropbox.com/s/1uoji4qqkefi662/spiraladder-fonts-as-friends-page-example.png?raw=1' target='_blank'>picture of an example Fonts as Friends Page </a> so you can see what a finished project looks like.",
+        "Build your project by forking <a href='https://codepen.io/tchaffee/pen/XVRzMz' target='_blank'>this CodePen pen</a>.",
+        "Remember to select the right test suite (\"Fonts as Friends\") and then run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+        "When you're done, use the button below to submit the URL to your working project."
+      ],
+      "releasedOn": "April 27, 2018",
+      "challengeSeed": [ "Nk0DzQi" ],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
+    },
+
+    {
+      "id": "bad87fee1348bd9acdf08812",
+      "title": "Size Your Images",
+      "description": [
+        "CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.",
+        "For example, if we wanted to create a CSS class called <code>heading-image</code> that gave HTML elements a width of 500 pixels, we'd use:",
+        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.heading-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "<hr>",
+        "Create a class called <code>intro-image</code> and use it to resize the image so that it's only 100 pixels wide.",
+        "<strong>Note</strong><br>You may need to set your browser to 100% zoom to pass the tests on this challenge. Ask someone if you don't know what this means and your tests do not pass."
+      ],
+      "challengeSeed": [
+        "<style>",
+        "  .intro {",
+        "    color: red;",
+        "    font-style: italic;",
+        "    font-weight: 700;",        
+        "  }",
+        "",
+        "  p {",
+        "    font-size: 16px;",
+        "    font-family: Monospace;",
+        "  }",
+        "",
+        "  .main-content {",
+        "    background-color: silver;",
+        "  }",        
+        "</style>",
+        "",
+        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "",
+        "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
+        "",        
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<div>",
+        "  <p>Things in this photo:</p>",
+        "  <ul>",
+        "    <li>A red wall</li>",
+        "    <li>Black t-shirts</li>",
+        "    <li>Friends waving</li>",
+        "  </ul>",
+        "",
+        "  <p>Things not in this photo:</p>",
+        "  <ol>",
+        "    <li>A cute cat</li>",
+        "    <li>Backflips</li>",
+        "    <li>Taylor Swift</li>",
+        "  </ol>",
+        "<div>",
+        "",
+        "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
+      ],
+      "tests": [
+        "assert($(\"img[src='https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg']\").attr('class') === \"intro-image\", 'message: Your <code>img</code> element should have the class <code>intro-image</code>.');",
+        "assert($(\"img\").width() === 100, 'message: Your image should be 100 pixels wide. Browser zoom should be at 100%.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+
+
+
     {
       "id": "bad87eee1348bd9aede07836",
       "title": "Set the id of an Element",
@@ -554,6 +622,7 @@
         "  .intro {",
         "    color: red;",
         "    font-style: italic;",
+        "    font-weight: 700;",        
         "  }",
         "",
         "  .intro-image {",
@@ -619,6 +688,7 @@
         "  .intro {",
         "    color: red;",
         "    font-style: italic;",
+        "    font-weight: 700;",        
         "  }",
         "",
         "  .intro-image {",
@@ -686,6 +756,7 @@
         "  .intro {",
         "    color: red;",
         "    font-style: italic;",
+        "    font-weight: 700;",        
         "  }",
         "",
         "  .intro-image {",
@@ -754,6 +825,7 @@
         "  .intro {",
         "    color: red;",
         "    font-style: italic;",
+        "    font-weight: 700;",        
         "  }",
         "",
         "  .intro-image {",
