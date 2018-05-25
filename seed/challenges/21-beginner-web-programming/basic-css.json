@@ -23,7 +23,7 @@
         [
           "",
           "",
-          "There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the <code>style</code> attribute. Alternatively, you can place CSS rules within <code>style</code> tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their uses, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.",
+          "There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the <code>style</code> attribute. Or you can place CSS rules within <code>style</code> tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their uses, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.",
           ""
         ],
         [
@@ -46,16 +46,16 @@
       "title": "Change the Color of Text",
       "description": [
         "Now let's change the color of some of our text.",
-        "We can do this by changing the <code>style</code> of your <code>h2</code> element.",
-        "The CSS property that is responsible for the color of an element's text is the \"color\" property.",
-        "Here's how you would set your <code>h2</code> element's text color to blue:",
-        "<code>&#60;h2 style=\"color: blue;\"&#62;FriendsPhotoApp&#60;/h2&#62;</code>",
-        "Note that it is a good practice to end inline <code>style</code> declarations with a <code>;</code> .",
+        "We can do this by changing the <code>style</code> of your <code>h1</code> element.",
+        "The CSS <code>property</code> that is responsible for the color of an element's text is the \"color\" property.",
+        "Here's how you would set your <code>h1</code> element's text color <code>property</code> to a <code>value</code> of blue:",
+        "<code>&#60;h1 style=\"color: blue;\"&#62;FriendsPhotoApp&#60;/h1&#62;</code>",
+        "Note that it is a good practice to end inline <code>style</code> declarations with a semicolon <code>;</code>.",
         "<hr>",
-        "Change your <code>h2</code> element's style so that its text color is red."
+        "Change your <code>h1</code> element's style so that its text color is red."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -80,8 +80,8 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');",
-        "assert(code.match(/<h2\\s+style\\s*=\\s*(\\'|\")\\s*color\\s*:\\s*(?:rgb\\(\\s*255\\s*,\\s*0\\s*,\\s*0\\s*\\)|rgb\\(\\s*100%\\s*,\\s*0%\\s*,\\s*0%\\s*\\)|red|#ff0000|#f00|hsl\\(\\s*0\\s*,\\s*100%\\s*,\\s*50%\\s*\\))\\s*\\;(\\'|\")>\\s*FriendsPhotoApp\\s*<\\/h2>/),' message: Your <code>style</code> declaration should end with a <code>;</code> .');"
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h1</code> element should be red.');",
+        "assert(code.match(/<h1\\s+style\\s*=\\s*(\\'|\")\\s*color\\s*:\\s*(?:rgb\\(\\s*255\\s*,\\s*0\\s*,\\s*0\\s*\\)|rgb\\(\\s*100%\\s*,\\s*0%\\s*,\\s*0%\\s*\\)|red|#ff0000|#f00|hsl\\(\\s*0\\s*,\\s*100%\\s*,\\s*50%\\s*\\))\\s*\\;(\\'|\")>\\s*FriendsPhotoApp\\s*<\\/h1>/),' message: Your <code>style</code> declaration should end with a <code>;</code> .');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -90,19 +90,18 @@
       "id": "bad87fee1348bd9aedf08805",
       "title": "Use CSS Selectors to Style Elements",
       "description": [
-        "With CSS, there are hundreds of CSS <code>properties</code> that you can use to change the way an element looks on your page.",
-        "When you entered <code>&#60;h2 style=\"color: red;\"&#62;FriendsPhotoApp&#60;/h2&#62;</code>, you were giving that individual <code>h2</code> element an <code>inline style</code>.",
-        "That's one way to add style to an element, but there's a better way to use <code>CSS</code>.",
+        "When you entered <code>&#60;h1 style=\"color: red;\"&#62;FriendsPhotoApp&#60;/h1&#62;</code>, you were giving that individual <code>h1</code> element an <code>inline style</code>.",
+        "That's not a good way to add style to an element, so here's a better way.",
         "At the top of your code, create a <code>style</code> element like this:",
         "<blockquote>&#60;style&#62;<br>&#60;/style&#62;</blockquote>",
-        "Inside that style element, you can create a <code>CSS selector</code> for all <code>h2</code> elements. For example, if you wanted all <code>h2</code> elements to be red, your style element would look like this:",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;h2 {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "Note that it's important to have both opening and closing curly braces (<code>{</code> and <code>}</code>) around each element's style. You also need to make sure your element's style is between the opening and closing style tags. Finally, be sure to add the semicolon to the end of each of your element's styles.",
+        "Inside that style element, you can create a <code>CSS selector</code> for all <code>h1</code> elements. For example, if you wanted all <code>h1</code> elements to be red, your style element would look like this:",
+        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;h1 {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "Note that it's important to have both opening and closing curly braces (<code>{</code> and <code>}</code>) around the style <code>declarations</code>. You also need to make sure all your CSS is between the opening and closing style tags. Finally, be sure to add the semicolon to the end of each of your styles <code>declarations</code>.",
         "<hr>",
-        "Delete your <code>h2</code> element's style attribute and instead create a CSS <code>style</code> element. Add the necessary CSS to turn all <code>h2</code> elements blue."
+        "Delete your <code>h1</code> element's style attribute and instead create a CSS <code>style</code> element. Add the necessary CSS to turn all <code>h1</code> elements blue."
       ],
       "challengeSeed": [
-        "<h2 style=\"color: red;\">FriendsPhotoApp</h2>",
+        "<h1 style=\"color: red;\">FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -127,10 +126,10 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert(!$(\"h2\").attr(\"style\"), 'message: Remove the style attribute from your <code>h2</code> element.');",
+        "assert(!$(\"h1\").attr(\"style\"), 'message: Remove the style attribute from your <code>h1</code> element.');",
         "assert($(\"style\") && $(\"style\").length > 1, 'message: Create a <code>style</code> element.');",
-        "assert($(\"h2\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: Your <code>h2</code> element should be blue.');",
-        "assert(code.match(/h2\\s*\\{\\s*color\\s*:.*;\\s*\\}/g), 'message: Ensure that your stylesheet <code>h2</code> declaration is valid with a semicolon and closing brace.');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: Your <code>h1</code> element should be blue.');",
+        "assert(code.match(/h1\\s*\\{\\s*color\\s*:.*;\\s*\\}/g), 'message: Ensure that your stylesheet <code>h1</code> declaration is valid with a semicolon and closing brace.');",
         "assert(code.match(/<\\/style>/g) && code.match(/<\\/style>/g).length === (code.match(/<style((\\s)*((type|media|scoped|title|disabled)=\"[^\"]*\")?(\\s)*)*>/g) || []).length, 'message: Make sure all your <code>style</code> elements are valid and have a closing tag.');"
       ],
       "type": "waypoint",
@@ -145,20 +144,20 @@
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.preface {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
         "You can see that we've created a CSS class called <code>preface</code> within the <code>&#60;style&#62;</code> tag.",
         "You can apply a class to an HTML element like this:",
-        "<code>&#60;h2 class=\"preface\"&#62;FriendsPhotoApp&#60;/h2&#62;</code>",
+        "<code>&#60;h1 class=\"preface\"&#62;FriendsPhotoApp&#60;/h1&#62;</code>",
         "Note that in your CSS <code>style</code> element, classes should start with a period. In your HTML elements' class declarations, classes should not start with a period.",
         "<hr>",
-        "Inside your <code>style</code> element, change the <code>h2</code> selector to <code>.intro</code> and update the color's value from <code>blue</code> to <code>red</code>.",
-        "Give your <code>h2</code> element the <code>class</code> attribute with a value of <code>'intro'</code>."
+        "Inside your <code>style</code> element, change the <code>h1</code> selector to <code>.intro</code> and update the color's value from <code>blue</code> to <code>red</code>.",
+        "Give your <code>h1</code> element the <code>class</code> attribute with a value of <code>'intro'</code>."
       ],
       "challengeSeed": [
         "<style>",
-        "  h2 {",
+        "  h1 {",
         "    color: blue;",
         "  }",
         "</style>",
         "",
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
@@ -183,10 +182,10 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');",
-        "assert($(\"h2\").hasClass(\"intro\"), 'message: Your <code>h2</code> element should have the class <code>intro</code>.');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h1</code> element should be red.');",
+        "assert($(\"h1\").hasClass(\"intro\"), 'message: Your <code>h1</code> element should have the class <code>intro</code>.');",
         "assert(code.match(/\\.intro\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: Your stylesheet should declare a <code>intro</code> class and have its color set to red.');",
-        "assert($(\"h2\").attr(\"style\") === undefined, 'message: Do not use inline style declarations like <code>style=\"color&#58; red\"</code> in your <code>h2</code> element.');"
+        "assert($(\"h1\").attr(\"style\") === undefined, 'message: Do not use inline style declarations like <code>style=\"color&#58; red\"</code> in your <code>h1</code> element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -203,7 +202,7 @@
       "description": [
         "Classes allow you to use the same CSS styles on multiple HTML elements. We added an extra paragraph to the starting code so you can see the difference between the paragraphs when you apply a class to only one of them.",
         "<hr>",
-        "Apply your <code>intro</code> class to the first <code>p</code> element."
+        "Apply your <code>intro</code> class to the first <code>p</code> element so that both your <code>h1</code> element and your first paragraph use the same class."
       ],
       "challengeSeed": [
         "<style>",
@@ -212,7 +211,7 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",
@@ -239,8 +238,8 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');",
-        "assert($(\"h2\").hasClass(\"intro\"), 'message: Your <code>h2</code> element should have the class <code>intro</code>.');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h1</code> element should be red.');",
+        "assert($(\"h1\").hasClass(\"intro\"), 'message: Your <code>h1</code> element should have the class <code>intro</code>.');",
         "assert($(\"p:eq(0)\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your first <code>p</code> element should be red.');",
         "assert(!($(\"p:eq(1)\").css(\"color\") === \"rgb(255, 0, 0)\"), 'message: Your second <code>p</code> element should not be red.');",
         "assert($(\"p:eq(0)\").hasClass(\"intro\"), 'message: Your first <code>p</code> element should have the class <code>intro</code>.');"
@@ -265,7 +264,7 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
@@ -301,10 +300,11 @@
 
     {
       "id": "5a1efb047358f53b18cd6a5f",
-      "title": "Change the Font Style of an Element",
+      "title": "Emphasize text with Italics",
       "description": [
-        "Font style is controlled by the <code>font-style</code> CSS property, like this:",
-        "<blockquote>h1 {<br>&nbsp;&nbsp;font-style: oblique;<br>}</blockquote>",
+        "The <code>font-style</code> CSS property turns italics on, like this:",
+        "<blockquote>h1 {<br>&nbsp;&nbsp;font-style: italics;<br>}</blockquote>",
+        "The other values you can use for <code>font-style</code> are <code>normal</code> to turn off italics, and <code>oblique</code> which simulates italics by slanting the text.",
         "<hr>",
         "Change the <code>intro</code> class to make the font italic. HINT: Make sure you don't change anything else in the <code>intro</code> class so that it stays red."
       ],
@@ -319,7 +319,7 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
@@ -357,8 +357,8 @@
       "title": "Set the Font Family of an Element",
       "description": [
         "You can set an element's font by using the <code>font-family</code> property.",
-        "For example, if you wanted to set your <code>h2</code> element's font to a <code>sans-serif</code> font, you would use the following CSS:",
-        "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: sans-serif;<br>}</blockquote>",
+        "For example, if you wanted to set your <code>h1</code> element's font to a <code>sans-serif</code> font, you would use the following CSS:",
+        "<blockquote>h1 {<br>&nbsp;&nbsp;font-family: sans-serif;<br>}</blockquote>",
         "<hr>",
         "Make all of your <code>p</code> elements use a <code>monospace</code> font."
       ],
@@ -374,7 +374,7 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
@@ -412,10 +412,11 @@
       "title": "Make a Font Bold",
       "description": [
         "You can make an element's font bold or lighter by using the <code>font-weight</code> property. Font-weight starts at 100 for the lightest, and goes in increments of 100 all the way up to 900 for the boldest font.",
-        "For example, if you wanted to set your <code>h2</code> element's font to a very light font, you would use the following CSS:",
-        "<blockquote>h2 {<br>&nbsp;&nbsp;font-weight: 100;<br>}</blockquote>",
+        "For example, if you wanted to set your <code>h1</code> element's font to a very light font, you would use the following CSS:",
+        "<blockquote>h1 {<br>&nbsp;&nbsp;font-weight: 100;<br>}</blockquote>",
+        "You can also use the values of <code>bold</code> and <code>normal<code> as shortcuts instead of giving a numeric weight.",
         "<hr>",
-        "Change your intro class <code>p</code> element to use a font-weight of <code>700</code> font."
+        "Change your intro class <code>p</code> element to use a font-weight of <code>bold</code>."
       ],
       "challengeSeed": [
         "<style>",
@@ -429,7 +430,7 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
@@ -456,7 +457,7 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert(code.match(/\\.intro\\s*{\\s*color\\s*:\\s*red\\s*;\\s*font-style\\s*:\\s*italic\\s*;\\s*font-weight\\s*:\\s*700\\s*;\\s*}/i), 'message: Between the <code>style</code> tags, give the <code>intro</code> class a <code>font-weight</code> of <code>700</code>.');"
+        "assert(code.match(/\\.intro\\s*{\\s*color\\s*:\\s*red\\s*;\\s*font-style\\s*:\\s*italic\\s*;\\s*font-weight\\s*:\\s*bold\\s*;\\s*}/i), 'message: Between the <code>style</code> tags, give the <code>intro</code> class a <code>font-weight</code> of <code>bold</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -466,7 +467,7 @@
 
     {
       "id": "bad87fed1348bd9aede07836",
-      "title": "Give a Background Color to a div Element",
+      "title": "Give a Background Color to an Element",
       "description": [
         "You can set an element's background color with the <code>background-color</code> property.",
         "For example, if you wanted an element's background color to be <code>green</code>, you'd put this within your <code>style</code> element:",
@@ -488,13 +489,13 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"intro-image\" src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
         "<div>",
         "  <p>Things in this photo:</p>",
@@ -522,6 +523,7 @@
       "challengeType": 0
     },
 
+
     {
       "id": "5ae39e307b65708139a44610",
       "title": "Build a Fonts as Friends Page",
@@ -540,68 +542,6 @@
       "challengeType": 3
     },
 
-    {
-      "id": "bad87fee1348bd9acdf08812",
-      "title": "Size Your Images",
-      "description": [
-        "CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.",
-        "For example, if we wanted to create a CSS class called <code>heading-image</code> that gave HTML elements a width of 500 pixels, we'd use:",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.heading-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "<hr>",
-        "Create a class called <code>intro-image</code> and use it to resize the image so that it's only 100 pixels wide.",
-        "<strong>Note</strong><br>You may need to set your browser to 100% zoom to pass the tests on this challenge. Ask someone if you don't know what this means and your tests do not pass."
-      ],
-      "challengeSeed": [
-        "<style>",
-        "  .intro {",
-        "    color: red;",
-        "    font-style: italic;",
-        "    font-weight: 700;",        
-        "  }",
-        "",
-        "  p {",
-        "    font-size: 16px;",
-        "    font-family: Monospace;",
-        "  }",
-        "",
-        "  .main-content {",
-        "    background-color: silver;",
-        "  }",        
-        "</style>",
-        "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
-        "",
-        "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
-        "",        
-        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
-        "",
-        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
-        "",
-        "<div>",
-        "  <p>Things in this photo:</p>",
-        "  <ul>",
-        "    <li>A red wall</li>",
-        "    <li>Black t-shirts</li>",
-        "    <li>Friends waving</li>",
-        "  </ul>",
-        "",
-        "  <p>Things not in this photo:</p>",
-        "  <ol>",
-        "    <li>A cute cat</li>",
-        "    <li>Backflips</li>",
-        "    <li>Taylor Swift</li>",
-        "  </ol>",
-        "<div>",
-        "",
-        "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
-      ],
-      "tests": [
-        "assert($(\"img[src='https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg']\").attr('class') === \"intro-image\", 'message: Your <code>img</code> element should have the class <code>intro-image</code>.');",
-        "assert($(\"img\").width() === 100, 'message: Your image should be 100 pixels wide. Browser zoom should be at 100%.');"
-      ],
-      "type": "waypoint",
-      "challengeType": 0
-    },
 
 
 
@@ -610,10 +550,9 @@
       "title": "Set the id of an Element",
       "description": [
         "In addition to classes, each HTML element can also have an <code>id</code> attribute.",
-        "There are several benefits to using <code>id</code> attributes: You can use an <code>id</code> to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.",
-        "<code>id</code> attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same <code>id</code> attribute.",
-        "Here's an example of how you give your <code>h2</code> element the id of <code>friends-photo-app</code>:",
-        "<code>&#60;h2 id=\"friends-photo-app\"></code>",
+        "<code>id</code> attributes should be unique. Since browsers won't enforce this and it could lead to unpredictable results, it is up to you to make sure ids are unique. So please don't give more than one element the same <code>id</code> attribute.",
+        "Here's an example of how you could give your <code>h1</code> element the id of <code>friends-photo-heading</code>:",
+        "<code>&#60;h1 id=\"friends-photo-heading\"></code>",
         "<hr>",
         "Give your <code>div</code> element the id <code>friends-photo-main</code>."
       ],
@@ -625,10 +564,6 @@
         "    font-weight: 700;",        
         "  }",
         "",
-        "  .intro-image {",
-        "    width: 100px;",
-        "  }",
-        "",
         "  p {",
         "    font-size: 16px;",
         "    font-family: Monospace;",
@@ -639,13 +574,13 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"intro-image\" src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
         "<div class=\"main-content\">",
         "  <p>Things in this photo:</p>",
@@ -675,13 +610,13 @@
       "id": "bad87dee1348bd9aede07836",
       "title": "Use an id Attribute to Style an Element",
       "description": [
-        "One cool thing about <code>id</code> attributes is that, like classes, you can style them using CSS.",
-        "However, an <code>id</code> is not reusable and should only be applied to one element. An <code>id</code> also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the <code>id</code> will be applied.",
+        "You already know about using element selectors and class selectors. Id selectors are the third and final type of <code>simple selectors</code> you can use in CSS.",
+        "An <code>id</code> is not reusable and should only be applied to one element. An <code>id</code> also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the <code>id</code> will be applied.",
         "Here's an example of how you can take your element with the <code>id</code> attribute of <code>friends-photo-main</code> and give it the background color of green. In your <code>style</code> element:",
         "<blockquote>#friends-photo-main {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
         "Note that inside your <code>style</code> element, you always reference classes by putting a <code>.</code> in front of their names. You always reference ids by putting a <code>#</code> in front of their names.",
         "<hr>",
-        "Try giving your div, which now has the <code>id</code> attribute of <code>friends-photo-main</code>, a Plum background. Remember the div also has a class of <code>.main-content</code>. Notice which of the colors is applied. Does the class with the silver background, or the id with the Plum background have priority?"
+        "Try giving your div, which now has the <code>id</code> attribute of <code>friends-photo-main</code>, a plum background. Remember the div also has a class of <code>.main-content</code>. Notice which of the colors is applied. Does the class selector with the silver background, or the id selector with the plum background have priority?"
       ],
       "challengeSeed": [
         "<style>",
@@ -689,10 +624,6 @@
         "    color: red;",
         "    font-style: italic;",
         "    font-weight: 700;",        
-        "  }",
-        "",
-        "  .intro-image {",
-        "    width: 100px;",
         "  }",
         "",
         "  p {",
@@ -705,13 +636,13 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"intro-image\" src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
         "<div id=\"friends-photo-main\" class=\"main-content\">",
         "  <p>Things in this photo:</p>",
@@ -740,16 +671,18 @@
       "type": "waypoint",
       "challengeType": 0
     },
+
+
     {
       "id": "5a22b158145af6cb1792d49a",
-      "title": "Centering text and images",
+      "title": "Centering text",
       "description": [
-        "Now let's try centering some things. Centering in CSS is a topic with a lot to cover, so this is just an introduction and we will see more about it in later lessons.",
-        "Usually you don't center HTML elements themselves, you need to style the parent element to center all the elements inside the parent.",
-        "One way to center align text and images is to use the <code>text-align</code> property, like in the example below:",
-        "<blockquote>&#60;style><br>&nbsp;&nbsp;.container {<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;}<br>&#60;/style><br><br>&#60;div class=\"container\"><br>&nbsp;&nbsp;&#60;p>Inside div; centered&#60;/p><br>&#60;/div><br><br>&#60;p>Outside; not centered.&#60;/p><br></blockquote>",
+        "NOTE: in the next couple of lessons we are going to continue to use id selectors so you get more practice with them. But please remember it is usually better to use classes for CSS styling. When in doubt, use a class selector instead of an id selector.",
+        "Centering things in CSS is a big subject and in future lessons you will learn everything you need to know. For now we are just going to learn how to center text, which is easy.",
+        "To center text use the <code>text-align</code> property, like in the example below:",
+        "<blockquote>&#60;style><br>&nbsp;&nbsp;#list-topic {<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;}<br>&#60;/style><br><br>&#60;p id=\"list-topic\">this text will be centered&#60;/p><br></blockquote>",
         "<hr>",
-        "Change your main-content class so everything contained by your <code>div</code> is centered."
+        "Give your <code>h1</code> element an id of <code>page-heading</code> and then create a style for that id to make the text centered. Also make the text centered for your div with id \"friends-photo-main\""
       ],
       "challengeSeed": [
         "<style>",
@@ -757,10 +690,6 @@
         "    color: red;",
         "    font-style: italic;",
         "    font-weight: 700;",        
-        "  }",
-        "",
-        "  .intro-image {",
-        "    width: 100px;",
         "  }",
         "",
         "  p {",
@@ -777,13 +706,13 @@
         "  }",        
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"intro-image\" src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
         "<div id=\"friends-photo-main\" class=\"main-content\">",
         "  <p>Things in this photo:</p>",
@@ -804,8 +733,10 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert($(\"div\").hasClass(\"main-content\"), 'message: Make sure your <code>div</code> element has the class <code>main-content</code>.');",
-        "assert($(\".main-content\").css(\"text-align\") === \"center\", 'message: Your <code>div</code> element should have <code>text-align</code> of \"center\".');"
+        "assert($(\"h1\").is(\"#page-heading\"), 'message: Make sure your <code>h1</code> element has the id <code>page-heading</code>.');",
+        "assert($(\"#page-heading\").css(\"text-align\") === \"center\", 'message: Your <code>#page-heading</code> style should have <code>text-align</code> of \"center\".');",
+        "assert($(\"div\").is(\"#friends-photo-main\"), 'message: Make sure your <code>div</code> element has the id <code>friends-photo-main</code>.');",
+        "assert($(\"#friends-photo-main\").css(\"text-align\") === \"center\", 'message: Your <code>#friends-photo-main</code> style should have <code>text-align</code> of \"center\".');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -816,9 +747,9 @@
       "description": [
         "Some elements do not look good centered. Notice the ordered list and unordered list elements and how far the text is from the bullets and numbers. We can fix that by making sure those lists are left aligned.",
         "Here is an example of how you would left align text for the child elements inside a div:",
-        "<blockquote>&#60;style><br>&nbsp;&nbsp;.container {<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: left;<br>&nbsp;&nbsp;}<br>&#60;/style><br><br>&#60;div class=\"container\"><br>&nbsp;&nbsp;&#60;p>Inside div; left aligned&#60;/p><br>&#60;/div></blockquote>",
+        "<blockquote>&#60;style><br>&nbsp;&nbsp;#container-main {<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: left;<br>&nbsp;&nbsp;}<br>&#60;/style><br><br>&#60;div id=\"container-main\"><br>&nbsp;&nbsp;&#60;p>Will be left aligned&#60;/p><br>&#60;/div></blockquote>",
         "<hr>",
-        "Change your ordered list and unordered list so everything contained by them is left aligned."
+        "Give your unordered list an id of <code>in-photo-list</code> and your ordered list an id of <code>not-in-photo-list</code>. Use those ids in your style section to make the text in the lists left aligned."
       ],
       "challengeSeed": [
         "<style>",
@@ -826,10 +757,6 @@
         "    color: red;",
         "    font-style: italic;",
         "    font-weight: 700;",        
-        "  }",
-        "",
-        "  .intro-image {",
-        "    width: 100px;",
         "  }",
         "",
         "  p {",
@@ -844,16 +771,21 @@
         "",
         "  #friends-photo-main {",
         "    background-color: Plum;",
-        "  }",        
+        "    text-align: center;",
+        "  }",
+        "",
+        "  #page-heading {",
+        "    text-align: center;",
+        "  }",
         "</style>",
         "",
-        "<h2 class=\"intro\">FriendsPhotoApp</h2>",
+        "<h1 id=\"page-heading\" class=\"intro\">FriendsPhotoApp</h1>",
         "",
         "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
         "",        
         "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"intro-image\" src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
         "<div id=\"friends-photo-main\" class=\"main-content\">",
         "  <p>Things in this photo:</p>",
@@ -874,21 +806,194 @@
         "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
       ],
       "tests": [
-        "assert($(\"ol\").css(\"text-align\") === \"left\", 'message: Your <code>ol</code> element should have <code>text-align</code> of \"left\".');",
-        "assert($(\"ul\").css(\"text-align\") === \"left\", 'message: Your <code>ul</code> element should have <code>text-align</code> of \"left\".');"
+        "assert($(\"ul\").is(\"#in-photo-list\"), 'message: Make sure your <code>ul</code> element has the id <code>in-photo-list</code>.');",
+        "assert($(\"#in-photo-list\").css(\"text-align\") === \"left\", 'message: Your <code>#in-photo-list</code> style should have <code>text-align</code> of \"left\".');",
+        "assert($(\"ol\").is(\"#not-in-photo-list\"), 'message: Make sure your <code>ol</code> element has the id <code>not-in-photo-list</code>.');",
+        "assert($(\"#not-in-photo-list\").css(\"text-align\") === \"left\", 'message: Your <code>#not-in-photo-list</code> style should have <code>text-align</code> of \"left\".');"
       ],
       "type": "waypoint",
       "challengeType": 0
     },
+
+    
+    {
+      "id": "bad87fee1348bd9acdf08812",
+      "title": "Size Your Images",
+      "description": [
+        "You have already learned a lot about CSS. You have learned something about styling text. And you have learned about simple selectors like element, class, and id selectors. Next up we will start looking at the basics of layout. Layout is how you control where elements appear on the page.",
+        "Changing the size of an element affects the layout because a smaller element takes up less space on the page. In the next few lessons it's important for you to starting noticing how much space elements take up.",
+        "CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.",
+        "For example, if we wanted to create a CSS style for the element with id <code>heading-image</code> that gave the element a width of 500 pixels, we'd use:",
+        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;#heading-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "<hr>",
+        "Give your image an id of \"intro-image\". Create a style using the `intro-image` selector and use it to resize the image so that it's only 100 pixels wide. Notice that when the image becomes smaller and takes up less space, the elements below it move up.",
+        "<strong>Note</strong><br>You may need to set your browser to 100% zoom to pass the tests on this challenge. Ask someone if you don't know what this means and your tests do not pass."
+      ],
+      "challengeSeed": [
+        "<style>",
+        "  .intro {",
+        "    color: red;",
+        "    font-style: italic;",
+        "    font-weight: 700;",        
+        "  }",
+        "",
+        "  p {",
+        "    font-size: 16px;",
+        "    font-family: Monospace;",
+        "  }",
+        "",
+        "  .main-content {",
+        "    background-color: silver;",
+        "    text-align: center;",
+        "  }",
+        "",
+        "  #friends-photo-main {",
+        "    background-color: Plum;",
+        "    text-align: center;",
+        "  }",
+        "",
+        "  #page-heading {",
+        "    text-align: center;",
+        "  }",
+        "",        
+        "  #in-photo-list {",
+        "    text-align: left;",
+        "  }",
+        "",
+        "  #not-in-photo-list {",
+        "    text-align: left;",
+        "  }",
+        "</style>",
+        "",
+        "<h1 id=\"page-heading\" class=\"intro\">FriendsPhotoApp</h1>",
+        "",
+        "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
+        "",        
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<div id=\"friends-photo-main\" class=\"main-content\">",
+        "  <p>Things in this photo:</p>",
+        "  <ul id=\"in-photo-list\">",
+        "    <li>A red wall</li>",
+        "    <li>Black t-shirts</li>",
+        "    <li>Friends waving</li>",
+        "  </ul>",
+        "",
+        "  <p>Things not in this photo:</p>",
+        "  <ol id=\"not-in-photo-list\">",
+        "    <li>A cute cat</li>",
+        "    <li>Backflips</li>",
+        "    <li>Taylor Swift</li>",
+        "  </ol>",
+        "<div>",
+        "",
+        "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
+      ],
+      "tests": [
+        "assert($(\"img[src='https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg']\").attr('id') === \"intro-image\", 'message: Your <code>img</code> element should have the id <code>intro-image</code>.');",
+        "assert($(\"img\").width() === 100, 'message: Your image should be 100 pixels wide. Browser zoom should be at 100%.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+
+    {
+      "id": "bad87fee1348bd9bedf08813",
+      "title": "Add Borders Around Your Elements",
+      "description": [
+        "The CSS border property can be used to customize the borders around an element. You can customize the border style (dotted, dashed, solid, double, ...), the color, and the width.",
+        "For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:",
+        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.thin-red-border {<br>&nbsp;&nbsp;&nbsp;&nbsp;border-color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-width: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-style: solid;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "<hr>",
+        "Create a class called <code>thick-green-border</code>. This class should have a 10px, solid, green border. Apply the class to your friends photo <code>img</code> element."
+      ],
+      "challengeSeed": [
+        "<style>",
+        "  .intro {",
+        "    color: red;",
+        "    font-style: italic;",
+        "    font-weight: 700;",        
+        "  }",
+        "",
+        "  p {",
+        "    font-size: 16px;",
+        "    font-family: Monospace;",
+        "  }",
+        "",
+        "  .main-content {",
+        "    background-color: silver;",
+        "    text-align: center;",
+        "  }",
+        "",
+        "  #intro-image {",
+        "    width: 100px;",
+        "  }",
+        "",
+        "  #friends-photo-main {",
+        "    background-color: Plum;",
+        "    text-align: center;",
+        "  }",
+        "",
+        "  #page-heading {",
+        "    text-align: center;",
+        "  }",
+        "",        
+        "  #in-photo-list {",
+        "    text-align: left;",
+        "  }",
+        "",
+        "  #not-in-photo-list {",
+        "    text-align: left;",
+        "  }",
+        "</style>",
+        "",
+        "<h1 id=\"page-heading\" class=\"intro\">FriendsPhotoApp</h1>",
+        "",
+        "<p class=\"intro\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate sagittis mollis.</p>",
+        "",        
+        "<p>Read about <a href=\"https://en.wikipedia.org/wiki/Friendship\" target=\"_blank\">friendship</a>.</p>",
+        "",
+        "<a href=\"#\"><img id=\"intro-image\" src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
+        "",
+        "<div id=\"friends-photo-main\" class=\"main-content\">",
+        "  <p>Things in this photo:</p>",
+        "  <ul id=\"in-photo-list\">",
+        "    <li>A red wall</li>",
+        "    <li>Black t-shirts</li>",
+        "    <li>Friends waving</li>",
+        "  </ul>",
+        "",
+        "  <p>Things not in this photo:</p>",
+        "  <ol id=\"not-in-photo-list\">",
+        "    <li>A cute cat</li>",
+        "    <li>Backflips</li>",
+        "    <li>Taylor Swift</li>",
+        "  </ol>",
+        "<div>",
+        "",
+        "<blockquote>Do I not destroy my enemies when I make them my friends? -- Abraham Lincoln</blockquote>"
+      ],
+      "tests": [
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: Your <code>img</code> element should have the class <code>thick-green-border</code>.');",
+        "assert($(\"img\").hasClass(\"thick-green-border\") && parseInt($(\"img\").css(\"border-top-width\"), 10) >= 8 && parseInt($(\"img\").css(\"border-top-width\"), 10) <= 12, 'message: Give your image a border width of <code>10px</code>.');",
+        "assert($(\"img\").css(\"border-right-style\") === \"solid\", 'message: Give your image a border style of <code>solid</code>.');",
+        "assert($(\"img\").css(\"border-left-color\") === \"rgb(0, 128, 0)\", 'messager: The border around your <code>img</code> element should be green.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+
     {
       "id": "bad88fee1348bd9aedf08825",
       "title": "Adjust the Padding of an Element",
       "description": [
-        "Now let's put our Friends Photo App away for a little while and learn more about styling HTML.",
-        "You may have already noticed this, but all HTML elements are essentially little boxes and each box takes up some horizontal and vertical space on the page, also known as the width and height of the element.",
-        "Each box is made up of four parts. We already know what <code>content</code> is from previous challenges. The other three properties that determine the size of the box are: <code>padding</code>, <code>margin</code>, and <code>border</code>.",
+        "Now let's put our Friends Photo App away and learn more about some types of styling that affect layout.",
+        "You may have already noticed this, but some HTML elements are boxes and each box takes up some horizontal and vertical space on the page, also known as the width and height of the element.",
+        "Each box in the <code>CSS box model</code> is made up of four parts. We already know what <code>content</code> is from the the Introduction to HTML section. The other three parts of the box are: <code>padding</code>, <code>margin</code>, and <code>border</code>.",
         "The margin and the padding are invisible. If a border is specified you can usually see it.",
-        "An element's <code>padding</code> controls the amount of space between the element's content and the element's border.",
+        "An element's <code>padding</code> controls the amount of space <strong>between the element's content and the element's border</strong>. Look at the diagram to make sure you understand this.",
         "<a href=\"//www.dropbox.com/s/vtc0tr4mwwcaaej/tcc-css-box-spacing.png?raw=1\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of the the CSS box model spacing\" src=\"//www.dropbox.com/s/vtc0tr4mwwcaaej/tcc-css-box-spacing.png?raw=1\"></a>",
         "Compare the above diagram with our code. We can see that the blue box and the red box are nested within the yellow box. Note that the red box has more <code>padding</code> than the blue box. Also note the border is black and surrounds each box.",
         "When you increase the blue box's <code>padding</code>, it will increase the distance between the content \"lorem ipsum\" and the border around the content.",
@@ -934,9 +1039,9 @@
       "id": "bad87fee1348bd9aedf08822",
       "title": "Adjust the Margin of an Element",
       "description": [
-        "An element's <code>margin</code> controls the amount of invisible space outside of an element. In other words, the amount of space between the <code>border</code> and other surrounding elements.",
+        "An element's <code>margin</code> controls the amount of invisible space <strong>outside of an element</strong>. In other words, the amount of space between the <code>border</code> and other surrounding elements.",
         "<a href=\"//www.dropbox.com/s/vtc0tr4mwwcaaej/tcc-css-box-spacing.png?raw=1\" target=\"_blank\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of the the CSS box model spacing\" src=\"//www.dropbox.com/s/vtc0tr4mwwcaaej/tcc-css-box-spacing.png?raw=1\"></a>",
-        "Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more <code>margin</code> than the blue box, making it appear smaller.",
+        "Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more <code>margin</code> than the blue box, making it smaller.",
         "When you increase the blue box's <code>margin</code>, it will increase the distance between its border and surrounding elements.",
         "<hr>",
         "Change the <code>margin</code> of the blue box to match that of the red box."
@@ -973,53 +1078,6 @@
       ],
       "tests": [
         "assert($(\".blue-box\").css(\"margin-top\") === \"30px\", 'message: Your <code>blue-box</code> class should give elements <code>30px</code> of <code>margin</code>.');"
-      ],
-      "type": "waypoint",
-      "challengeType": 0
-    },
-    {
-      "id": "bad87fee1348bd9aedf08823",
-      "title": "Add a Negative Margin to an Element",
-      "description": [
-        "An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.",
-        "If you set an element's <code>margin</code> to a negative value, the element will grow larger.",
-        "<hr>",
-        "Try to set the <code>margin</code> to a negative value like the one for the red box.",
-        "Change the <code>margin</code> of the blue box to <code>-15px</code>, so it fills the entire horizontal width of the yellow box around it."
-      ],
-      "challengeSeed": [
-        "<style>",
-        "  .box {",
-        "    border-style: solid;",
-        "    border-color: black;",
-        "    border-width: 5px;",
-        "  }",
-        "",
-        "  .yellow-box {",
-        "    background-color: yellow;",
-        "    padding: 10px;",
-        "  }",
-        "  ",
-        "  .red-box {",
-        "    background-color: red;",
-        "    padding: 20px;",
-        "    margin: -15px;",
-        "  }",
-        "",
-        "  .blue-box {",
-        "    background-color: cornflowerblue;",
-        "    padding: 20px;",
-        "    margin: 20px;",
-        "  }",
-        "</style>",
-        "",
-        "<div class=\"box yellow-box\">",
-        "  <h5 class=\"box red-box\">lorem ipsum</h5>",
-        "  <h5 class=\"box blue-box\">lorem ipsum</h5>",
-        "</div>"
-      ],
-      "tests": [
-        "assert($(\".blue-box\").css(\"margin-top\") === \"-15px\", 'message: Your <code>blue-box</code> class should give elements <code>-15px</code> of <code>margin</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1080,7 +1138,7 @@
         "Sometimes you will want to customize an element so that it has a different <code>margin</code> on each of its sides.",
         "CSS allows you to control the <code>margin</code> of an element on all four sides with <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties.",
         "<hr>",
-        "Give the blue box a <code>margin</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "Give the blue box a <code>margin</code> of <code>60px</code> on its top and left side, but only <code>10px</code> on its bottom and right side."
       ],
       "challengeSeed": [
         "<style>",
@@ -1114,14 +1172,33 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".blue-box\").css(\"margin-top\") === \"40px\", 'message: Your <code>blue-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".blue-box\").css(\"margin-right\") === \"20px\", 'message: Your <code>blue-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".blue-box\").css(\"margin-bottom\") === \"20px\", 'message: Your <code>blue-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".blue-box\").css(\"margin-left\") === \"40px\", 'message: Your <code>blue-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.');"
+        "assert($(\".blue-box\").css(\"margin-top\") === \"60px\", 'message: Your <code>blue-box</code> class should give the top of elements <code>60px</code> of <code>margin</code>.');",
+        "assert($(\".blue-box\").css(\"margin-right\") === \"10px\", 'message: Your <code>blue-box</code> class should give the right of elements <code>10px</code> of <code>margin</code>.');",
+        "assert($(\".blue-box\").css(\"margin-bottom\") === \"10px\", 'message: Your <code>blue-box</code> class should give the bottom of elements <code>10px</code> of <code>margin</code>.');",
+        "assert($(\".blue-box\").css(\"margin-left\") === \"60px\", 'message: Your <code>blue-box</code> class should give the left of elements <code>60px</code> of <code>margin</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 0
     },
+    {
+      "id": "5b086de0c850a88a3a57b3e8",
+      "title": "Build a CSS Box Model page",
+      "description": [
+        "Build a page using margins, borders, and padding to show how they affect layout.",
+        "Here's a <a href='https://dl.dropbox.com/s/pv6qy7aivtt09aq/spiraladder-css-box-model-example.png?raw=1' target='_blank'>picture of an example CSS Box Model Page </a> so you can see what a finished project looks like.",
+        "Build your project by forking <a href='https://codepen.io/tchaffee/pen/XVRzMz' target='_blank'>this CodePen pen</a>.",
+        "Remember to select the right test suite (\"CSS Box Model\") and then run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+        "When you're done, use the button below to submit the URL to your working project."
+      ],
+      "releasedOn": "April 27, 2018",
+      "challengeSeed": [ "Nk0DzQi" ],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
+    },
+
+
     {
       "id": "bad87fee1348bd9aedf08826",
       "title": "Use Clockwise Notation to Specify the Padding of an Element",

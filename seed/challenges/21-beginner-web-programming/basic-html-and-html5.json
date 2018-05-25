@@ -327,7 +327,7 @@
         "Create an <code>a</code> element that links to the Wikipedia article on friendship, which has a URL of <code>https://en.wikipedia.org/wiki/Friendship</code> and has \"friendship\" as its <code>anchor text</code>."
       ],
       "challengeSeed": [
-        "<h2>FriendsPhotoApp</h2>",
+        "<h1>FriendsPhotoApp</h1>",
         "",
         "<img src=\"//www.dropbox.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg?raw=1\" alt=\"Friends waving out the window of a red building.\">",
         "",
