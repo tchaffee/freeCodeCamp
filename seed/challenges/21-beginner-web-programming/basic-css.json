@@ -1,7 +1,7 @@
 {
   "name": "Introduction to CSS",
   "order": 2,
-  "time": "1 hour",
+  "time": "3 hours",
   "helpRoom": "Help",
   "challenges": [
     {
@@ -17,13 +17,19 @@
         [
           "",
           "",
-          "CSS has been adopted by all major browsers and allows you to control:<br><ul><li>color</li><li>fonts</li><li>positioning</li><li>spacing</li><li>sizing</li><li>decorations</li><li>transitions</li></ul>",
+          "CSS has been adopted by all major browsers and allows you to control (backed up lessons follow this.:<br><ul><li>color</li><li>fonts</li><li>positioning</li><li>spacing</li><li>sizing</li><li>decorations</li><li>transitions</li></ul>",
           ""
         ],
         [
           "",
           "",
-          "There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the <code>style</code> attribute. Or you can place CSS rules within <code>style</code> tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their uses, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.",
+          "There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the <code>style</code> attribute. For example:<br><br><code>&#60;p style=\"color: green;\"&#62;This paragraph would be green&#60;/p&#62;</code><br><br>Or you can place CSS rules within <code>&#60;style&#62;</code> tags in an HTML document. For example:<br><br><code>&#60;style&#62;<br>&nbsp;&nbsp;h1&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;gray;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</code>",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their uses, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code. For these lessons we will mostly be using <code>&#60;style&#62;</code> tags but keep in mind that for bigger projects you will want to put CSS rules in an external style sheet.",
           ""
         ],
         [
@@ -1296,6 +1302,138 @@
       "challengeType": 0
     },
     {
+      "id": "5b1720f9491d1a4fee5679ce",
+      "title": "Step on the Gas! Go faster!",
+      "description": [
+        [
+          "",
+          "",
+          "Wow! You've learned a lot of ways to specify margins and padding. Is it too much? Let's take a step back and talk about ways to learn. With margins and padding we <strong>almost</strong> covered everything there is to know, but there are still some things you haven't learned! It seems like we could spend hours and hours just learning about margins and padding, and there are hundreds of other CSS topics to cover too.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "One problem with learning every detail is remembering what you learned. Margins and padding are so important to CSS layout that it was important to start of covering them <strong>in depth</strong>, but in the next lessons we will go less in depth and cover more topics in a shorter time.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Think of it as the difference between walking very slowly somewhere and paying attention to every detail compared to driving somewhere. You will cover way more ground driving, but you will see less detail. Time to get in the car and start driving.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "This approach should help you advance more quickly towards building the kinds of websites that are most popular. See if you notice the difference and you feel like you are making quicker progress.",
+          ""
+        ]
+      ],
+      "releasedOn": "",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7,
+      "isRequired": false,
+      "translations": {}
+    },
+
+    {
+      "id": "5b1721e7491d1a4fee5679d0",
+      "title": "What should we learn next?",
+      "description": [
+        [
+          "",
+          "",
+          "As we just mentioned, instead of learning everything you <em>can</em> do, we will start focusing more on the things you will most often <em>need</em> to do. One of the best ways to understand what you might <em>need</em> to is to look at existing web sites and see what is most commonly used. Let's take a look at some of your previous projects and analyze them.",
+          ""
+        ],
+        [
+          "https://dl.dropbox.com/s/pv6qy7aivtt09aq/spiraladder-css-box-model-example.png?raw=1",
+          "An image of an a completed CSS Box Model project",
+          "There are three styles in your CSS Box Model project you will see used often on web sites. The first two boxes take up the entire width of their <em>container</em> and the text is left aligned. Boxes three, four, and five, seem a bit odd and it's true that you won't often see these styles. But notice the centered elements. Boxes six through nine. Aside from the massive borders on boxes seven and eight, they look really nice, right? You'll see centered elements used very often on web pages.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Next we will learn a better way to center things. As we start learning more about layout, start paying attention when you visit websites. What is centered? How much of the page do elements take up? Are there different sections on the page that serve different purpose? What is the purpose of each section? How is the text aligned? What kind of margins and padding are used?",
+          ""
+        ]
+      ],
+      "releasedOn": "",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7,
+      "isRequired": false,
+      "translations": {}
+    },
+
+    {
+      "id": "5b1740a18aee14e553e2c752",
+      "title": "Auto margins and percentage width",
+      "description": [
+        "Let's do a quick review of what we know so far about centering. We already know how to center text content within a box using <code>text-align: center</code>. And in the CSS Box Model project you learned how to center an entire element by using equal left and right margins. Go back and look at your CSS Box Project if you don't remember.",
+        "A better way to make the margins equal is to let the browser calculate them for you. You can do this using <code>margin: 0 auto</code>. The zero sets the top and bottom margins to 0, and the auto calculates the left and right margins automatically. But remember that boxes usually take up the full width of their container. So for auto margins to work you have to specify the width of the element. For example, the following style would center an element:",
+        "<blockquote>.foo-section {<br>&nbsp;&nbsp;margin: 0 auto;<br>&nbsp;&nbsp;width: 50%;<br>}</blockquote>",
+        "Wait! What's that 50% for the width? So far we have only seen pixles for width. Well percentages are more flexible. No matter how you resize the browser window, or what device you view it on, the element will take up 50% of its containers width. Using a percentage width along with auto margins is a flexible and powerful way to center elements.",
+        "<hr>",
+        "Add to the <code>main-section</code> class to center the div with auto margins and give it a width of 60%. When you are done, notice the <code>div</code> is centered, but its content is left-aligned."
+      ],
+      "releasedOn": "",
+      "challengeSeed": [
+        "<style>",
+        "  .main-section {",
+        "    background-color: skyblue;",
+        "  }",
+        "</style>",
+        "",
+        "<div class=\"main-section\">I want to be centered</div>"
+      ],
+      "tests": [
+        "assert(code.match(/<style>\\s*\\.main-section\\s*\\{[\\s\\S]*\\s*background-color\\s*:\\s*skyblue\\s*;[\\s\\S]*\\s*\\}\\s*<\\/style>/g), 'message: Your <code>main-section</code> class should give a background-color of <code>skyblue</code>.');",
+        "assert(code.match(/<style>\\s*\\.main-section\\s*\\{[\\s\\S]*\\smargin\\s*:\\s*0 auto\\s*;[\\s\\S]*\\}\\s*<\\/style>/g), 'message: Your <code>main-section</code> class should give a margin of <code>0 auto</code>.');",
+        "assert(code.match(/<style>\\s*\\.main-section\\s*\\{[\\s\\S]*\\swidth\\s*:\\s*60%\\s*;[\\s\\S]*\\}\\s*<\\/style>/g), 'message: Your <code>main-section</code> class should give a width of <code>60%</code>.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+
+
+    {
+      "id": "5b19d3a8b18ed5a068c05120",
+      "title": "Centering images",
+      "description": [
+        "To center images you need to also make it into block element by using the style <code>display: block</code>",
+        "For example, the following style would center an image:",
+        "<blockquote>.thumbnail {<br>&nbsp;&nbsp;margin: 0 auto;<br>&nbsp;&nbsp;width: 30%;<br>&nbsp;&nbsp;display: block;<br>}</blockquote>",
+        "<hr>",
+        "Change the <code>product-image</code> class to center the image with auto margins, a width of 50%, and a display of block."
+      ],
+      "releasedOn": "",
+      "challengeSeed": [
+        "<style>",
+        "  .product-image {",
+        "",
+        "  }",
+        "</style>",
+        "",
+        "<img class=\"product-image\" src=\"https://source.unsplash.com/random/400x200\" alt=\"A random picture from the unsplash website.\">"
+      ],
+      "tests": [
+        "assert(code.match(/<style>\\s*\\.product-image\\s*\\{[\\s\\S]*\\s*display\\s*:\\s*block\\s*;[\\s\\S]*\\s*\\}\\s*<\\/style>/g), 'message: Your <code>product-image</code> class should give a display of <code>block</code>.');",
+        "assert(code.match(/<style>\\s*\\.product-image\\s*\\{[\\s\\S]*\\smargin\\s*:\\s*0 auto\\s*;[\\s\\S]*\\}\\s*<\\/style>/g), 'message: Your <code>product-image</code> class should give a margin of <code>0 auto</code>.');",
+        "assert(code.match(/<style>\\s*\\.product-image\\s*\\{[\\s\\S]*\\swidth\\s*:\\s*50%\\s*;[\\s\\S]*\\}\\s*<\\/style>/g), 'message: Your <code>product-image</code> class should give a width of <code>50%</code>.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0
+    },
+
+
+
+    {
       "id": "bad87fee1348bd9aedf08736",
       "title": "Style the HTML Body Element",
       "description": [
@@ -1349,6 +1487,25 @@
       ],
       "type": "waypoint",
       "challengeType": 0
+    },
+
+    {
+      "id": "5b1ff4c9b6b5dd51cef985ed",
+      "title": "Improve your Tribute Page",
+      "description": [
+        "You have reached a very important milestone. You know enough now to make your Tribute Page look a lot better, and for it to work on mobile and with any browser window size!",
+        "Here's a <a href='https://dl.dropbox.com/s/327zy00649il26n/spiraladder-tribute-page-improved-example.png?raw=1' target='_blank'>picture of an example improved Tribute Page </a> so you can see what a finished project looks like.",
+        "IMPORTANT: Do not fork a blank CodePen for this project. Instead, use your existing Tribute Page and just select the \"Tribute Page II\" tests",
+        "As always, run the tests before you do any coding. Write code to get each test to pass, one at a time, and when all the tests pass you will have a finished project.<br><br><img src=\"//dl.dropboxusercontent.com/s/65eci88yemyh755/tcc-codepen-run-tests.png\"/>",
+        "When you're done, use the button below to submit the URL to your working project."
+      ],
+      "releasedOn": "June 12, 2018",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
     }
+
   ]
 }

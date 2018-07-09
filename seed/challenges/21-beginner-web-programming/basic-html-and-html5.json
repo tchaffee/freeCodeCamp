@@ -296,7 +296,7 @@
         "<code>&#60img src=\"//www.your-image-source.com/your-image.jpg\" alt=\"Author standing on a beach with two thumbs up.\"&#62</code>",
         "<hr>",
         "Try to add an image to our website:",
-        "Insert an <code>img</code> tag, after the <code>h2</code> element.",
+        "Insert an <code>img</code> tag, after the <code>h1</code> element.",
         "Now set the <code>src</code> attribute so that it points to this url:",
         "<code>//www.dropbox.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg?raw=1</code>",
         "Finally don't forget to give your image an <code>alt</code> attribute."
@@ -351,7 +351,7 @@
         "<code>&#60;p&#62;To see some art visit &#60;a href=\"https://www.moma.org\"&#62;the MOMA website&#60;/a&#62; and explore the online exhibitions.&#60;/p&#62;</code>",
         "<code>Nesting</code> just means putting one element inside of another element.",
         "<hr>",
-        "Now nest your existing <code>a</code> element within a new <code>p</code> element (just after the existing <code>h2</code> element) so that the surrounding paragraph says \"Read about friendship\", but where only \"friendship\" is a link, and the rest of the text is plain text."
+        "Now nest your existing <code>a</code> element within a new <code>p</code> element (just after the existing <code>h1</code> element) so that the surrounding paragraph says \"Read about friendship\", but where only \"friendship\" is a link, and the rest of the text is plain text."
       ],
       "challengeSeed": [
         "<h1>FriendsPhotoApp</h1>",
@@ -457,11 +457,13 @@
         "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
         "<p>Things in this photo:</p>",
+        "",
         "<ul>",
         "  <li>A red wall</li>",
         "  <li>Black t-shirts</li>",
         "  <li>Friends waving</li>",
         "</ul>",
+        "",
         "<p>Things not in this photo:</p>"
       ],
       "tests": [
@@ -496,7 +498,10 @@
         "",
         "<a href=\"#\"><img src=\"https://dl.dropboxusercontent.com/s/7hqv52mcunwrl6l/tcc-friend-photo.jpg\" alt=\"Friends waving out the window of a red building.\"></a>",
         "",
+        "",
+        "",
         "<p>Things in this photo:</p>",
+        "",
         "<ul>",
         "  <li>A red wall</li>",
         "  <li>Black t-shirts</li>",
@@ -504,6 +509,7 @@
         "</ul>",
         "",
         "<p>Things not in this photo:</p>",
+        "",
         "<ol>",
         "  <li>A cute cat</li>",
         "  <li>Backflips</li>",
