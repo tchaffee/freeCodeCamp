@@ -42,7 +42,6 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/react-fontawesome": "0.0.20",
-    "@freecodecamp/curriculum": "^3.0.1",
     "@freecodecamp/loopback-component-passport": "^1.0.0",
     "accepts": "^1.3.0",
     "auth0-js": "^9.5.1",
@@ -143,6 +142,7 @@
     "rx-dom": "^7.0.3",
     "sanitize-html": "^1.11.1",
     "snyk": "^1.69.1",
+    "spiraladder-curriculum": "^3.0.1",
     "store": "git+https://github.com/berkeleytrue/store.js.git#feature/noop-server",
     "stripe": "^6.1.0",
     "uuid": "^3.0.1",
