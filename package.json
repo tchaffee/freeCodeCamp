@@ -142,7 +142,7 @@
     "rx-dom": "^7.0.3",
     "sanitize-html": "^1.11.1",
     "snyk": "^1.69.1",
-    "spiraladder-curriculum": "^3.0.1",
+    "spiraladder-curriculum": "/ws/curriculum",
     "store": "git+https://github.com/berkeleytrue/store.js.git#feature/noop-server",
     "stripe": "^6.1.0",
     "uuid": "^3.0.1",
