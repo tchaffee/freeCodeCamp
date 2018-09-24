@@ -163,7 +163,7 @@ export default function settingsController(app) {
         () => {
           res.status(200).json({
             message: 'We have updated your preferences. ' +
-              'You can now continue using freeCodeCamp.'
+              'You can now continue using Spiraladder.'
           });
         },
         next

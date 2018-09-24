@@ -150,7 +150,7 @@ class Profile extends Component {
           <Alert bsStyle='info'>
             <p>
               {
-                'In order to view their freeCodeCamp certifications, ' +
+                'In order to view their Spiraladder certifications, ' +
                 'they need to make their profile public'
               }
             </p>

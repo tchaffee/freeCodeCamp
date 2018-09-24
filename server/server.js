@@ -40,12 +40,12 @@ app.start = _.once(function() {
   const server = app.listen(app.get('port'), function() {
     app.emit('started');
     log(
-      'freeCodeCamp server listening on port %d in %s',
+      'Spiraladder server listening on port %d in %s',
       app.get('port'),
       app.get('env')
     );
     if (isBeta) {
-      log('freeCodeCamp is in beta mode');
+      log('Spiraladder is in beta mode');
     }
     log(`connecting to db at ${db.settings.url}`);
   });

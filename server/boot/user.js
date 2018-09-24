@@ -185,9 +185,9 @@ module.exports = function(app) {
 
     return Email.send$({
       type: 'email',
-      to: 'team@freecodecamp.org',
+      to: 'team@spiraladder.com',
       cc: user.email,
-      from: 'team@freecodecamp.org',
+      from: 'team@spiraladder.com',
       subject: 'Abuse Report : Reporting ' + username + '\'s profile.',
       text: dedent(`
         Hello Team,\n

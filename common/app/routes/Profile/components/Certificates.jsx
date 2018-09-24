@@ -150,7 +150,7 @@ function Certificates({
   return (
     <div>
       <FullWidthRow>
-        <h2 className='text-center'>freeCodeCamp Certifications</h2>
+        <h2 className='text-center'>Spiraladder Certifications</h2>
         <br />
         {
           hasModernCert ?
