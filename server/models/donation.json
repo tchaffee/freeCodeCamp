@@ -1,6 +1,6 @@
 {
   "name": "Donation",
-  "description": "A representaion of a donation to freeCodeCamp",
+  "description": "A representaion of a donation to Spiraladder",
   "plural": "donations",
   "base": "PersistedModel",
   "idInjection": true,

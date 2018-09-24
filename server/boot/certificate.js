@@ -135,10 +135,10 @@ function sendCertifiedEmail(
   const notifyUser = {
     type: 'email',
     to: email,
-    from: 'team@freeCodeCamp.org',
+    from: 'team@spiraladder.com',
     subject: dedent`
       Congratulations on completing all of the
-      freeCodeCamp certifications!
+      Spiraladder certifications!
     `,
     text: renderCertifedEmail({
       username,
@@ -243,7 +243,7 @@ export default function certificate(app) {
   const successMessage = (username, name) => dedent`
     @${username}, you have successfully claimed
     the ${name}!
-    Congratulations on behalf of the freeCodeCamp team!
+    Congratulations on behalf of the Spiraladder team!
     `;
 
   function verifyCert(req, res, next) {

@@ -77,7 +77,7 @@ export class FreeCodeCamp extends React.Component {
   }
 }
 
-FreeCodeCamp.displayName = 'freeCodeCamp';
+FreeCodeCamp.displayName = 'Spiraladder';
 FreeCodeCamp.propTypes = propTypes;
 
 export default connect(

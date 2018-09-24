@@ -40,12 +40,12 @@ module.exports = function(app) {
   app.use(router);
 
   function chat(req, res) {
-    res.redirect('https://gitter.im/FreeCodeCamp/FreeCodeCamp');
+    res.redirect('https://gitter.im/spiraladder/HelpForCoders');
   }
 
   function howNonprofitProjectsWork(req, res) {
       res.redirect(301,
-        'https://medium.freecodecamp.com/open-source-for-good-1a0ea9f32d5a');
+        'https://medium.spiraladder.com/open-source-for-good-1a0ea9f32d5a');
 
   }
 
@@ -69,7 +69,7 @@ module.exports = function(app) {
 
   function showTestimonials(req, res) {
     res.render('resources/stories', {
-      title: 'Testimonials from Happy freeCodeCamp Students ' +
+      title: 'Testimonials from Happy Spiraladder Students ' +
         'who got Software Engineer Jobs',
       stories: testimonials.slice(0, 72),
       moreStories: true
@@ -78,7 +78,7 @@ module.exports = function(app) {
 
   function showAllTestimonials(req, res) {
     res.render('resources/stories', {
-      title: 'Testimonials from Happy freeCodeCamp Students ' +
+      title: 'Testimonials from Happy Spiraladder Students ' +
         'who got Software Engineer Jobs',
       stories: testimonials,
       moreStories: false
@@ -116,7 +116,7 @@ module.exports = function(app) {
   }
 
   function twitch(req, res) {
-    res.redirect('https://twitch.tv/freecodecamp');
+    res.redirect('https://twitch.tv/spiraladder');
   }
 
   function unsubscribe(req, res, next) {
@@ -265,8 +265,8 @@ module.exports = function(app) {
     };
     request(
       [
-        'https://api.github.com/repos/freecodecamp/',
-        'freecodecamp/pulls?client_id=',
+        'https://api.github.com/repos/spiraladder/',
+        'spiraladder/pulls?client_id=',
         githubClient,
         '&client_secret=',
         githubSecret
@@ -280,8 +280,8 @@ module.exports = function(app) {
 
         return request(
           [
-            'https://api.github.com/repos/freecodecamp/',
-            'freecodecamp/issues?client_id=',
+            'https://api.github.com/repos/spiraladder/',
+            'spiraladder/issues?client_id=',
             githubClient,
             '&client_secret=',
             githubSecret

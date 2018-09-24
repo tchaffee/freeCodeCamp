@@ -1,4 +1,4 @@
-# Docker Compose over ride file for FreeCodeCamp
+# Docker Compose over ride file for Spiraladder
 #
 # Run with:
 #   docker-compose -f docker-compose.yml -f docker-compose-shared.yml up
@@ -11,7 +11,7 @@ services:
     mailhog:
         networks:
             - shared
-    freecodecamp:
+    spiraladder:
         networks:
             - shared
 

@@ -2,9 +2,7 @@ import helmet from 'helmet';
 
 let trusted = [
   "'self'",
-  'https://search.freecodecamp.org',
-  'https://www.freecodecamp.rocks',
-  'https://api.freecodecamp.rocks',
+  'https://search.spiraladder.com',
   'https://*.algolianet.com',
   'https://' + process.env.AUTH0_DOMAIN
 ];
@@ -89,7 +87,7 @@ export default function csp() {
         '*.twitter.com',
         '*.ghbtns.com',
         '*.freecatphotoapp.com',
-        'freecodecamp.github.io'
+        'spiraladder.github.io'
       ].concat(trusted)
     },
     // set to true if you only want to report errors

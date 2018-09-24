@@ -73,7 +73,7 @@ export default function prodErrorHandler() {
             ...handled,
             stack: createStackHtml(err),
             errorTitle: createErrorTitle(err),
-            title: 'freeCodeCamp - Server Error',
+            title: 'Spiraladder - Server Error',
             status
           }
         );

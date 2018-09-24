@@ -38,7 +38,7 @@ function serveNewsApp(req, res) {
     return res.redirect(context.url);
   }
   routerLog('news markup sending');
-  return res.render('layout-news', { title: 'News | freeCodeCamp', markup });
+  return res.render('layout-news', { title: 'News | Spiraladder', markup });
 }
 
 function createShortLinkHandler(app) {

@@ -1,7 +1,7 @@
 import http from 'http';
 import _ from 'lodash';
 
-const lybsynFeed = 'http://freecodecamp.libsyn.com/render-type/json';
+const lybsynFeed = 'http://spiraladder.libsyn.com/render-type/json';
 
 export function getLybsynFeed() {
   return new Promise((resolve, reject) => {

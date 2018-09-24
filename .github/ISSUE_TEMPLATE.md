@@ -1,4 +1,4 @@
-<!-- NOTE: If you're reporting a security issue, don't create a GitHub issue. Instead, email security@freecodecamp.org. We will look into it immediately. -->
+<!-- NOTE: If you're reporting a security issue, don't create a GitHub issue. Instead, email security@spiraladder.com. We will look into it immediately. -->
 
 #### Describe your problem and - if possible - how to reproduce it
 
